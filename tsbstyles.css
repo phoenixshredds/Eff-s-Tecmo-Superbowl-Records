@@ -1,0 +1,32 @@
+/*
+User Stories:
+- Color scheme: Papyrus/vintage
+- Text theme: serif
+- Round box edges (bonus: try to make them appear like paper ripped corners)
+- Inline body with left nav menu and right images (perhaps "football cards" of prominent record holders)
+- Add :hover {background-color} to highlight records when mouse hovers.
+*/
+
+.header-text {
+    text-align: center;
+}
+
+body {
+    background-color: #d6c3a1;
+    display: block;
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+    font: 16px Georgia, serif;
+}
+
+legend {
+    padding: 10px;
+    font: bold 20px Georgia, serif;
+}
+
+fieldset {
+    border: 3px solid #362404;
+    border-radius: 6px;
+    padding: 10px;
+}
