@@ -9,10 +9,12 @@ Done - Splash page with description, rules, updates, and current standings.
 - Img Avatars of every team logo for team records pages
     - Upload to cloud; link image in html
 - Img football cards or TSB attribute pages for individual records pages
+    - Hover or mouseclick function on records to display player card/avatar/profile
     - Upload to cloud; link image to html
     - Optional Ideas: 
         - Comments form
         - Select-menu navigation
+
 --->
 <!DOCTYPE html>
 <html lang="en">
@@ -23,7 +25,17 @@ Done - Splash page with description, rules, updates, and current standings.
     <title>Eff's Tecmo Superbowl Records</title>
     <link href="tsbstyles.css" rel="stylesheet" type="text/css" />
 </head>
-
+<nav class="sidenav">
+    <a href="index.html">Home</a>
+    <a href="02-passingrecords.html">Passing Records</a>
+    <a href="03-rushingrecords.html">Rushing Records</a>
+    <a href="04-receivingandallpurposerecords.html">Receiving/All-Purpose Records</a>
+    <a href="05-DefenseSpecialTeamsRecords.html">Defense/Special Teams Records</a>
+    <a href="06-TeamSeasonRecords.html">Team Season Records</a>
+    <a href="07-TeamSingleGameRecords.html">Team Single Game Records</a>
+    <a href="08-NotableFeats.html">Notable Feats</a>
+    <a href="09-PlayerBiosAndStats.html">Player Bios and Career Stats</a>
+</nav>
 <body>
     <h1 class="header-text" id="title">Eff's Tecmo Superbowl Records</h1>
     <h2 class="header-text">Welcome to the NEW Eff's Tecmo Superbowl Records Website</h2>
@@ -36,6 +48,16 @@ Done - Splash page with description, rules, updates, and current standings.
                 This website is the result of that record keeping combined with some web development skills.
             </p>
         </fieldset>
+        <legend>Total Records Leaders:</legend>
+        <fieldset>
+            <p id="records-tracked">Records Tracked: 87</p>
+            <ol>
+                <li>Effer: 64 records</li>
+                <li>Cpu: 24 records</li>
+                <li>Atter: 20 records</li>
+                <li>Rewer: 12 records</li>
+            </ol>
+        </fieldset>
         <legend>Latest Updates:</legend>
         <fieldset id="latest-updates">
             <p>This new look records site includes new records like Most Passes W/O an Interception (Season), QB Total
@@ -45,12 +67,20 @@ Done - Splash page with description, rules, updates, and current standings.
         <fieldset id="standings">
             <ul>
                 <li>Eff's Phoenix Cardinals (Gen IV) 2-0</li>
-                <li>Eff's Minnesota Vikings (Gen I '93) 11-0</li>
+                <li>Eff's Minnesota Vikings (Gen I '93) 15-0</li>
             </ul>
         </fieldset>
         <legend>Previous Season:</legend>
         <fieldset id="standings">
             Eff's Philadelphia Eagles (Gen IV) 16-0, Superbowl Champions
+        </fieldset>
+        <legend>Current Streak (including post-season):</legend>
+        <fieldset>
+            <ul>
+                <li>Atter: 80 wins</li>
+                <li>Effer: 57 Wins</li>
+                <li>Rewer: 19 wins</li>
+            </ul>
         </fieldset>
         <legend>Rules of Play:</legend>
         <fieldset id="rules">We don't just play the game however we want. There are certain rules we must follow for
@@ -94,5 +124,8 @@ Done - Splash page with description, rules, updates, and current standings.
         </fieldset>
     </main>
 </body>
+<footer>
+    <p>&copyCopyright Jeffrey Hill, 2023.</p>
+</footer>
 
 </html>

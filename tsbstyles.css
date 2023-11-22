@@ -7,16 +7,49 @@ User Stories:
 - Add :hover {background-color} to highlight records when mouse hovers.
 */
 
+/*
+html {
+    box-sizing: border-box;
+}
+*/
+
 .header-text {
     text-align: center;
+}
+
+nav {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    max-width: 300px;
+    border: 1px solid black;
+    z-index: 1;
+    overflox-x: hidden;
+    padding-top: 30px;
+}
+
+.sidenav a {
+    display: block;
+    padding: 8px 8px 8px 20px;
+    border-top: 1px solid black;
+    color: #130c02;
+}
+
+.sidenav a:last-of-type {
+    border-bottom: 1px solid black;
+}
+
+.sidenav a:hover {
+    color: grey;
 }
 
 body {
     background-color: #d6c3a1;
     display: block;
     max-width: 60%;
-    margin: 0 auto;
-    padding: 10px;
+    margin: 40% 0 0 40%;
+    padding: 20px;
     font: 16px Georgia, serif;
 }
 
@@ -28,5 +61,26 @@ legend {
 fieldset {
     border: 3px solid #362404;
     border-radius: 6px;
-    padding: 10px;
+    padding: 10px;    
+}
+
+#records-tracked {
+    text-align: center;
+    font-weight: bold;
+}
+
+.record-header {
+    text-align: center;
+    font-weight: bold;
+}
+
+#legend-header {
+    text-align: center;
+    font-size: 1.70rem;
+}
+
+.key-header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.25rem;
 }
