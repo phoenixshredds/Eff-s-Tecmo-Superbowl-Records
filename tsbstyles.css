@@ -31,7 +31,7 @@ nav {
 
 .sidenav a {
     display: block;
-    padding: 8px 8px 8px 20px;
+    padding: 12px 12px 12px 20px;
     border-top: 1px solid black;
     color: #130c02;
 }
@@ -47,10 +47,12 @@ nav {
 body {
     background-color: #d6c3a1;
     display: block;
-    max-width: 60%;
-    margin: 40% 0 0 40%;
-    padding: 20px;
+    max-width: 600px;
+    min-width: 400px;
+    margin: 55px 280px 0px 280px;
+    padding-left: 1rem;
     font: 16px Georgia, serif;
+    overflow: scroll;
 }
 
 legend {
@@ -83,4 +85,13 @@ fieldset {
     text-align: center;
     font-weight: bold;
     font-size: 1.25rem;
+}
+
+footer a {
+    color: #130c02;
+    padding-bottom: 30px;
+}
+
+footer a:hover {
+color: grey;
 }
