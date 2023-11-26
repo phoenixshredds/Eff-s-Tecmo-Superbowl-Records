@@ -5,6 +5,7 @@ User Stories:
 - Round box edges (bonus: try to make them appear like paper ripped corners)
 - Inline body with left nav menu and right images (perhaps "football cards" of prominent record holders)
 - Add :hover {background-color} to highlight records when mouse hovers.
+- Fieldset background like a football field
 */
 
 /*
@@ -25,7 +26,6 @@ nav {
     max-width: 300px;
     border: 1px solid black;
     z-index: 1;
-    overflox-x: hidden;
     padding-top: 30px;
 }
 
@@ -55,7 +55,7 @@ body {
     overflow: scroll;
 }
 
-legend {
+h2 {
     padding: 10px;
     font: bold 20px Georgia, serif;
 }
@@ -94,4 +94,8 @@ footer a {
 
 footer a:hover {
 color: grey;
+}
+
+.teams-used {
+  
 }
