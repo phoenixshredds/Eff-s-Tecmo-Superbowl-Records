@@ -1,10 +1,11 @@
 /*
 User Stories:
-- Color scheme: Papyrus/vintage
-- Text theme: serif
-- Round box edges (bonus: try to make them appear like paper ripped corners)
+√ Color scheme: Papyrus/vintage
+√ Text theme: serif
+√ Round box edges
 - Inline body with left nav menu and right images (perhaps "football cards" of prominent record holders)
 - Add :hover {background-color} to highlight records when mouse hovers.
+- Background to look like old newspaper
 - Fieldset background like a football field
 */
 
@@ -55,15 +56,16 @@ body {
     overflow: scroll;
 }
 
-h2 {
+.secondary-header {
     padding: 10px;
-    font: bold 20px Georgia, serif;
+    font: bold 24px Georgia, serif;
 }
 
 fieldset {
     border: 3px solid #362404;
     border-radius: 6px;
-    padding: 10px;    
+    padding: 10px;  
+    margin-bottom: 10px;  
 }
 
 #records-tracked {
@@ -74,11 +76,6 @@ fieldset {
 .record-header {
     text-align: center;
     font-weight: bold;
-}
-
-#legend-header {
-    text-align: center;
-    font-size: 1.70rem;
 }
 
 .key-header {
@@ -94,8 +91,4 @@ footer a {
 
 footer a:hover {
 color: grey;
-}
-
-.teams-used {
-  
 }
