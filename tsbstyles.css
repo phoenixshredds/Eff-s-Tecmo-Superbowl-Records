@@ -61,7 +61,7 @@ body {
     font: bold 24px Georgia, serif;
 }
 
-fieldset {
+div {
     border: 3px solid #362404;
     border-radius: 6px;
     padding: 10px;  
