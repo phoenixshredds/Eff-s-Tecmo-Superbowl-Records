@@ -120,3 +120,33 @@ li:hover {
     z-index: 1;
     cursor: pointer;
 }
+
+/* SHOWS PROFILE PIC OF RECORD HOLDER ON TEXT HOVER */
+.hover-img a {
+    position: relative;
+}
+
+.hover-img a span {
+    position: absolute;
+    display: none;
+    z-index: 99;
+}
+
+.hover-img a:hover span {
+    display: block;
+    height: 5px;
+}
+
+.hover-img img {
+    border-radius: 12px;
+    filter: drop-shadow(24px -24px 12px #000);
+    margin: -250px 0 0 260px;
+    width: 210%;
+    color: #000;
+    font-weight: bold;
+}
+
+li > a {
+    color: white;
+    text-decoration: none;
+}
