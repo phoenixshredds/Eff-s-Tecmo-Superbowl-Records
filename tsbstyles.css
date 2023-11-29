@@ -3,16 +3,14 @@ User Stories:
 √ Color scheme: Papyrus/vintage
 √ Text theme: serif
 √ Round box edges
-- Inline body with left nav menu and right images (perhaps "football cards" of prominent record holders)
-- Add :hover {background-color} to highlight records when mouse hovers.
+√ Inline body with left nav menu
+- Right side images of prominent record holders
+√ Add :hover {background-color} to highlight records when mouse hovers.
 - Background to look like old newspaper
-- Fieldset background like a football field
-*/
-
-/*
-html {
-    box-sizing: border-box;
-}
+√ Div background green 
+- Div background like a football field
+√ Football shaped headers
+- Design laces for football header
 */
 
 .football-header {
@@ -26,6 +24,7 @@ html {
     border-radius: 47%;
     padding: 40px;
     max-width: 360px;
+    margin: 35px auto 35px auto;
 }
 
 .secondary-header {
@@ -59,8 +58,12 @@ nav {
     border-bottom: 1px solid black;
 }
 
-.sidenav a:hover {
-    color: grey;
+/* HIGHLIGHTS LINK WITH FOOTBALL COLOR SCHEME */
+footer a:hover, .sidenav a:hover {
+    color: #faf3e6;
+    background-color: #362404;
+    padding: 6px;
+    border-radius: 6px;
 }
 
 body {
@@ -74,13 +77,14 @@ body {
     overflow: scroll;
 }
 
-
-
+/* DIV BACKGROUND HAS FOOTBALL FIELD COLOR SCHEME */
 div {
     border: 3px solid #362404;
     border-radius: 6px;
     padding: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0 10px 0;
+        background-color: rgb(34, 70, 29);
+            color: white;
 }
 
 #records-tracked {
@@ -101,22 +105,13 @@ div {
 
 footer a {
     color: #130c02;
-    padding-bottom: 30px;
-}
-
-footer a:hover {
-    color: grey;
 }
 
 li {
     padding: 2.5px;
 }
 
-div:hover {
-    background-color: rgb(34, 70, 29);
-    color: white;
-}
-
+/* HIGHLIGHTS A LIST ELEMENT WITH MOUSE HOVER */
 li:hover {
     background-color: rgb(13, 48, 8);
     color: #faf3e6;
