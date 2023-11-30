@@ -144,6 +144,12 @@ li:hover {
     width: 520px;
     color: #000;
     font-weight: bold;
+    border: 6px solid #362404;
+}
+
+/* SHRINKS IMAGE SIZE OF LEAGUE/TEAM LOGOS */
+.logo img {
+    width: 250px;
 }
 
 li > a {
