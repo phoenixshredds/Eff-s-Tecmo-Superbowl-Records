@@ -18,7 +18,8 @@ User Stories:
         - JS interactive football game
         - Right side scroll menu of TSB players/records
         - Background pic of old sports page newspaper
-
+        - JS Audio on record MouseClick: 1 "down", 2 "set", 3+ "hut"
+        - Use proper soundboard for record ("touchdown" "interception" "first down" "sack.")
 --->
 <!DOCTYPE html>
 <html lang="en">
@@ -42,11 +43,12 @@ User Stories:
 </nav>
 
 <body>
-    <h1 class="football-header" id="title">Eff's Tecmo Superbowl Records</h1>
-    <h2 class="text-header">Welcome to the NEW Eff's Tecmo Superbowl Records Website</h2>
+    <h1 class="football-title" id="title">Eff's Tecmo Superbowl Records</h1>
+    <h2 class="text-subtitle">Welcome to the NEW Eff's Tecmo Superbowl Records Website</h2>
     <main id="main" class="main">
         <div id="intro">
-            <p>Once upon a time there was a freewebs site called, "Eff, Att and Rew's Tecmo Superbowl Records." That
+            <p class="first-letter">Once upon a time there was a freewebs site called, "Eff, Att and Rew's Tecmo
+                Superbowl Records." That
                 site no
                 longer exists.
                 However, Eff (that's me) kept all of the records and continued to update them over the years.
@@ -55,7 +57,7 @@ User Stories:
         </div>
 
         <div>
-            <h3 class="football-header secondary-header">Total Records Leaders:</h3>
+            <h3 class="football-title football-subtitle">Total Records Leaders:</h3>
             <p id="records-tracked">Records Tracked: 87</p>
             <ol>
                 <li>Effer: 64 records</li>
@@ -66,13 +68,14 @@ User Stories:
         </div>
 
         <div id="latest-updates">
-            <h4 class="football-header secondary-header">Latest Updates:</h4>
-            <p>This new look records site includes new records like Most Passes W/O an Interception (Season), QB Total
+            <h4 class="football-title football-subtitle">Latest Updates:</h4>
+            <p class="first-letter">This new look records site includes new records like Most Passes W/O an Interception
+                (Season), QB Total
                 Touchdowns (Passing + Rushing) and more.</p>
         </div>
 
         <div id="standings">
-            <h5 class="football-header secondary-header">Latest Season Standings:</h5>
+            <h5 class="football-title football-subtitle">Latest Season Standings:</h5>
             <ul>
                 <li>Eff's Phoenix Cardinals (Gen IV) 2-0</li>
                 <li>Eff's Minnesota Vikings (Gen I '93) 15-0</li>
@@ -80,12 +83,12 @@ User Stories:
         </div>
 
         <div id="standings">
-            <h6 class="football-header secondary-header">Previous Season:</h6>
+            <h6 class="football-title football-subtitle">Previous Season:</h6>
             <li>Eff's Philadelphia Eagles (Gen IV) 16-0, Superbowl Champions</li>
         </div>
 
         <div>
-            <p class="football-header secondary-header">Current Streak (including post-season):</p>
+            <p class="football-title football-subtitle">Current Streak (including post-season):</p>
             <ul>
                 <li>Atter: 80 wins</li>
                 <li>Effer: 57 Wins</li>
@@ -94,8 +97,9 @@ User Stories:
         </div>
 
         <div id="rules">
-            <p class="football-header secondary-header">Rules of Play:</p>
-            <p>We don't just play the game however we want. There are certain rules we must follow for
+            <p class="football-title football-subtitle">Rules of Play:</p>
+            <p class="first-letter">We don't just play the game however we want. There are certain rules we must follow
+                for
                 these records to
                 be considered valid and fair. Anyone who has played TSB enough knows there are ways to cheat the
                 system,
@@ -124,16 +128,16 @@ User Stories:
                 rule to allow freedom of position swapping. After all, no WR is going to be Bo Jackson or Christian
                 Okoye.
             </p>
-            As this is all enforced via honor system. there are a few other considerations: We look down upon using
-            save
-            states to constantly re-try to play games for records. In general, we just play the games and they fall
-            as
-            they
-            may.
+            <p>As this is all enforced via honor system. there are a few other considerations: We look down upon using
+                save
+                states to constantly re-try to play games for records. In general, we just play the games and they fall
+                as
+                they
+                may.</p>
         </div>
 
         <div id="rosters">
-            <p class="football-header secondary-header">What about rosters?:</p>
+            <p class="football-title football-subtitle">What about rosters?:</p>
             <p>You may have noticed the present records are with the original 1991 Tecmo Superbowl roster. New to
                 this
                 site is

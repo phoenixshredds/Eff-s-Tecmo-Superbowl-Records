@@ -13,7 +13,14 @@ User Stories:
 - Design laces for football header
 */
 
-.football-header {
+
+font-face {
+    font-family: "Nova Square";
+    src: local("NovaSquare-Regular") local("Nova Square") format("truetype") format("ttf");
+}
+
+/* FOOTBALL STYLE HEADER */
+.football-title {
     justify-content: center;
     text-align: center;
     position: static;
@@ -25,14 +32,17 @@ User Stories:
     padding: 40px;
     max-width: 360px;
     margin: 35px auto 35px auto;
+    font-family: "Nova Square", Courier, serif;
+    font-weight: normal;
 }
 
-.secondary-header {
-    font: bold 22px Georgia, serif;
+.football-subtitle {
+    font-weight: normal;
+    font-size: 1.35rem;
     max-width: 280px;
 }
 
-.text-header {
+.text-subtitle {
     text-align: center;
 }
 
@@ -73,7 +83,7 @@ body {
     min-width: 360px;
     margin: 55px 280px 0px 280px;
     padding-left: 1rem;
-    font: 16px Georgia, serif;
+    font: 16px Lato, sans-serif;
     overflow: scroll;
 }
 
@@ -83,7 +93,7 @@ div {
     border-radius: 6px;
     padding: 10px;
     margin: 10px 0 10px 0;
-        background-color: rgb(34, 70, 29);
+        background-color: rgb(43, 88, 37);
             color: white;
 }
 
@@ -155,4 +165,14 @@ li:hover {
 li > a {
     color: white;
     text-decoration: none;
+}
+
+.emphasis {
+    font-weight: bold;
+    font-size: 1.11rem;
+}
+
+.first-letter::first-letter {
+    font-size: 2.5rem;
+    color: #362404;
 }
