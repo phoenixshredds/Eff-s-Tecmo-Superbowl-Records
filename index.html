@@ -8,16 +8,14 @@ User Stories:
 √ Complete each page's text content
 - Add favorite team pics to bio page
 - Img Avatars of every team logo for team records pages
-    - Upload to cloud; link image in html
-- Img football cards/TSB profile page for individual records pages
-    - Hover or mouseclick function on records to display player card/avatar/profile
-    - Upload to cloud; link image to html
+√ Img TSB profile page for individual records pages
+    √ Hover function on records to display player profile
     - Optional Ideas: 
         - Comments form
         - Select-menu navigation
         - JS interactive football game
         - Right side scroll menu of TSB players/records
-        - Background pic of old sports page newspaper
+        - Two column design like a magazine (@media query 1 column with narrow screens)
         - JS Audio on record MouseClick: 1 "down", 2 "set", 3+ "hut"
         - Use proper soundboard for record ("touchdown" "interception" "first down" "sack.")
 --->
@@ -30,6 +28,7 @@ User Stories:
     <title>Eff's Tecmo Superbowl Records</title>
     <link href="tsbstyles.css" rel="stylesheet" type="text/css" />
 </head>
+
 <nav class="sidenav">
     <a href="index.html">Home</a>
     <a href="02-passingrecords.html">Passing Records</a>
@@ -43,10 +42,13 @@ User Stories:
 </nav>
 
 <body>
-    <h1 class="football-title" id="title">Eff's Tecmo Superbowl Records</h1>
-    <h2 class="text-subtitle">Welcome to the NEW Eff's Tecmo Superbowl Records Website</h2>
+    <header>
+        <h1 class="football-title" id="title">Eff's Tecmo Superbowl Records</h1>
+        <h2 class="text-subtitle">Welcome to the NEW<br>Eff's Tecmo Superbowl Records!</h2>
+    </header>
     <main id="main" class="main">
-        <div id="intro">
+        <div>
+            <p id="intro">Introduction</p>
             <p class="first-letter">Once upon a time there was a freewebs site called, "Eff, Att and Rew's Tecmo
                 Superbowl Records." That
                 site no
@@ -57,18 +59,18 @@ User Stories:
         </div>
 
         <div>
-            <h3 class="football-title football-subtitle">Total Records Leaders:</h3>
-            <p id="records-tracked">Records Tracked: 87</p>
-            <ol>
-                <li>Effer: 64 records</li>
-                <li>Cpu: 24 records</li>
-                <li>Atter: 20 records</li>
-                <li>Rewer: 12 records</li>
-            </ol>
+            <h3 class="football-title football-subtitle"><span></span>Total Records Leaders:</h3>
+            <div class="meter">
+                <meter value="87" min="0" max="87">87</meter> 87 Records Tracked</br>
+                <meter value="64" min="0" max="87">64</meter> 64 Records by Effer</br>
+                <meter value="24" min="0" max="87">24</meter> 24 Records by CPU<br>
+                <meter value="20" min="0" max="87">20</meter> 20 Records by Atter<br>
+                <meter value="12" min="0" max="87">12</meter> 12 Records by Rewer<br>
+            </div>
         </div>
 
         <div id="latest-updates">
-            <h4 class="football-title football-subtitle">Latest Updates:</h4>
+            <h4 class="football-title football-subtitle horizontal-lace">Latest Updates:</h4>
             <p class="first-letter">This new look records site includes new records like Most Passes W/O an Interception
                 (Season), QB Total
                 Touchdowns (Passing + Rushing) and more.</p>
@@ -89,11 +91,12 @@ User Stories:
 
         <div>
             <p class="football-title football-subtitle">Current Streak (including post-season):</p>
-            <ul>
-                <li>Atter: 80 wins</li>
-                <li>Effer: 57 Wins</li>
-                <li>Rewer: 19 wins</li>
-            </ul>
+            <div class="meter">
+                <meter value="197" min="0" max="197">197</meter> 197 Wins (Eff's Record)</br>
+                <meter value="80" min="0" max="197">80</meter> 80 Wins by Atter</br>
+                <meter value="57" min="0" max="197">57</meter> 57 Wins by Effer<br>
+                <meter value="19" min="0" max="197">19</meter> 19 Wins by Rewer<br>
+            </div>
         </div>
 
         <div id="rules">
