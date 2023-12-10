@@ -11,9 +11,30 @@ User Stories:
 - Div background like a football field
 √ Football shaped headers
 - Design laces for football header
+- Design seams for football header
 - Refactor color scheme with :root {var(--variable-name)}
 - Convert to column/row design
+- Create class for team logo colors: border ridge with primary and seconary team colors, make each team's color a var(--variable-name).
 */
+
+:root {
+  --black: black;
+  --red: red;
+  --green: green;
+  --gold: gold;
+  --yellow: yellow;
+  --white: white;
+  --blue: blue;
+  --navy: navy;
+  --orange: orangered;
+  --lightblue: lightblue;
+  --lightgreen: lightgreen;
+  --football-color: rgb(51, 38, 4);
+  --grass-color: rgb(43, 88, 37);
+  --dark-grass: rgb(13, 48, 8);
+  --background-color: #d6c3a1;
+  --transparent-bg: #d6c3a199;
+}
 
 font-face {
   font-family: "Nova Square";
@@ -26,9 +47,9 @@ font-face {
   text-align: center;
   position: relative;
   color: whitesmoke;
-  background-color: rgb(51, 38, 4);
-  filter: drop-shadow(12px -24px 12px #000);
-  border: 2px solid rgb(44, 35, 5);
+  background-color: var(--football-color);
+  filter: drop-shadow(12px -24px 12px var(--black));
+  border: 2px solid var(--football-color);
   border-radius: 47%;
   padding: 40px;
   max-width: 360px;
@@ -60,11 +81,25 @@ font-face {
 
 .text-subtitle {
   text-align: center;
-  background-color: #d6c3a199;
+  background-color: var(--transparent-bg);
   padding: 30px;
   border-radius: 18px;
   border: 8px ridge #362404CC;
   font-family: "Nova Square", Courier, serif;
+}
+
+.key-header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.25rem;
+  font-family: "Nova Square", Courier, serif;
+}
+
+.key {
+  font-weight: normal;
+  font-size: 1rem;
+  text-align: left;
+  font: 16px Lato, sans-serif;
 }
 
 #intro {
@@ -90,7 +125,7 @@ nav {
   padding: 18px 18px 18px 20px;
   border-top: 2px solid black;
   color: #130c02;
-  background-color: #d6c3a199;
+  background-color: var(--transparent-bg);
 }
 
 .sidenav a:last-of-type {
@@ -101,13 +136,13 @@ nav {
 footer a:hover,
 .sidenav a:hover {
   color: #faf3e6;
-  background-color: #362404;
+  background-color: var(--football-color);
   padding: 6px;
   border-radius: 6px;
 }
 
 body {
-  background-color: #d6c3a1;
+  background-color: var(--background-color);
   background-image: url(newspaper.jpg);
   background-repeat: repeat-x;
   background-attachment: fixed;
@@ -122,28 +157,23 @@ body {
 
 /* DIV BACKGROUND HAS FOOTBALL FIELD COLOR SCHEME */
 div {
-  border: 3px solid #362404;
+  border: 3px solid var(--football-color);
   border-radius: 6px;
   padding: 10px;
   margin: 10px 0 10px 0;
-  background-color: rgb(43, 88, 37);
+  background-color: var(--grass-color);
   color: white;
 }
 
 .record-header {
   text-align: center;
-  font-weight: bold;
-}
-
-.key-header {
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
+    font-family: "Nova Square", Courier, serif;
 }
 
 footer {
   font-weight: bold;
-  background-color: #d6c3a199;
+  background-color: var(--transparent-bg);
   padding: 30px;
   border-radius: 47%;
   text-align: center;
@@ -159,7 +189,7 @@ li {
 
 /* HIGHLIGHTS A LIST ELEMENT WITH MOUSE HOVER */
 li:hover {
-  background-color: rgb(13, 48, 8);
+  background-color: var(--dark-grass);
   color: #faf3e6;
   border-radius: 8px;
   border: 1.5px solid #faf3e6;
@@ -190,7 +220,7 @@ li:hover {
   width: 520px;
   color: #000;
   font-weight: bold;
-  border: 6px solid #362404;
+  border: 6px solid var(--football-color);
 }
 
 /* SHRINKS IMAGE SIZE OF LEAGUE/TEAM LOGOS */
@@ -210,7 +240,7 @@ li>a {
 
 .first-letter::first-letter {
   font-size: 2.5rem;
-  color: #362404;
+  color: var(--football-color);
 }
 
 .meter {
