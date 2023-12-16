@@ -15,6 +15,7 @@ User Stories:
 - Refactor color scheme with :root {var(--variable-name)}
 - Convert to column/row design
 - Create class for team logo colors: border ridge with primary and seconary team colors, make each team's color a var(--variable-name).
+- Style dropdown menu
 */
 
 :root {
@@ -56,10 +57,33 @@ font-face {
   border-radius: 47%;
   padding: 40px;
   max-width: 360px;
-  margin: 35px auto 35px auto;
+  margin: 30px auto 30px auto;
   font-family: "Nova Square", Courier, serif;
   font-weight: normal;
   overflow: hidden;
+}
+
+#title {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+
+.football-subtitle {
+  font-weight: normal;
+  font-size: 1.35rem;
+  max-width: 280px;
+}
+
+.text-subtitle {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: var(--transparent-bg);
+  padding: 30px;
+  border-radius: 18px;
+  border: 8px ridge var(--transparent-brown);
+  font-family: "Nova Square", Courier, serif;
 }
 
 /* FOOTBALL LACES */
@@ -75,21 +99,6 @@ font-face {
   transform: translateY(-50%);
   border-radius: 100% 100% 100% 100% / 70% 75%;
 }*/
-
-.football-subtitle {
-  font-weight: normal;
-  font-size: 1.35rem;
-  max-width: 280px;
-}
-
-.text-subtitle {
-  text-align: center;
-  background-color: var(--transparent-bg);
-  padding: 30px;
-  border-radius: 18px;
-  border: 8px ridge var(--transparent-brown);
-  font-family: "Nova Square", Courier, serif;
-}
 
 .key-header {
   text-align: center;
@@ -116,10 +125,10 @@ nav {
   height: 100%;
   top: 0;
   left: 0;
-  min-width: 270px;
+  width: 270px;
   border: 2px solid black;
   z-index: 1;
-  padding-top: 30px;
+  padding-top: 120px;
   font-weight: bold;
 }
 
@@ -151,12 +160,18 @@ body {
   background-repeat: repeat-x;
   background-attachment: fixed;
   display: block;
-  max-width: 480px;
-  min-width: 480px;
+  width: 480px;
   margin: 55px 280px 0px 280px;
   padding-left: 1rem;
   font: 16px Lato, sans-serif;
-  overflow: scroll;
+  overflow: auto;
+}
+
+.content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 100%);
+  grid-gap: 50px;
+  overflow: visible;
 }
 
 /* DIV BACKGROUND HAS FOOTBALL FIELD COLOR SCHEME */
@@ -250,10 +265,7 @@ li>a {
 .meter {
   position: relative;
   border: 0;
-  margin: auto;
-  max-width: 80%;
-  min-width: 50%;
-  overflow: hidden;
+  margin-left: 20%;
 }
 
 meter {

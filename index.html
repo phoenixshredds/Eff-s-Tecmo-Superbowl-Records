@@ -14,7 +14,7 @@ User Stories:
     √ Hover function on records to display player profile
     - Optional Ideas: 
         - Comments form
-        - Select-menu navigation
+        √ Select-menu navigation
         - JS interactive football game
         - Right side scroll menu of TSB players/records
         - Two column design like a magazine 
@@ -27,6 +27,8 @@ User Stories:
             - Forum with member signup
             - Custom ROM page to share rom downloads
             - Online League Page (Original roster, latest rosters and original roster redrafts)
+        - JS idea: Create a passer rating calculator with form inputs
+            - Make one for TSB formula and one for NFL formula
 --->
 <!DOCTYPE html>
 <html lang="en">
@@ -50,12 +52,40 @@ User Stories:
     <a href="09-PlayerBiosAndStats.html">Player Bios and Career Stats</a>
 </nav>
 
+<!--  DROPDOWN NAVIGATION 
+
+<label for="side-nav">
+    <select name="home" id="home">
+        <option value="home"><a href="index.html">Home</a></option>
+    </select>
+    <select name="individual-records" id="individual-records">
+        <option value="select">Individual Records:</option>
+        <option value="passing"><a href="02-passingrecords.html">Passing Records</a></option>
+        <option value="rushing"><a href="03-rushingrecords.html">Rushing Records</a></option>
+        <option value="receiving"><a href="04-receivingandallpurposerecords.html">Receiving/All-Purpose Records</a>
+        </option>
+        <option value="defense-special-teams"><a href="05-DefenseSpecialTeamsRecords.html">Defense/Special Teams
+                Records</a></option>
+    </select>
+    <select value="select">
+        <option value="team-records">Team Records:</option>
+        <option value="single-season"><a href="06-SingleSeasonTeamRecords.html">Single Season Team Records</a></option>
+        <option value="single-game"><a href="07-SingleGameTeamRecords.html">Single Game Team Records</a></option>
+    </select>
+    <select name="more" id="more">
+        <option value="other">Feats and Bios:</option>
+        <option value="feats"><a href="08-NotableFeats.html">Notable Feats</a></option>
+        <option value="bio"><a href="09-PlayerBiosAndStats.html">Player Bios and Career Stats</a></option>
+    </select>
+</label>
+-->
+
 <body>
-    <header>
-        <h1 class="football-title" id="title">Eff's Tecmo Superbowl Records</h1>
+    <header id="title">
+        <h1 class="football-title">Eff's Tecmo Superbowl Records</h1>
         <h2 class="text-subtitle">Welcome to the NEW<br>Eff's Tecmo Superbowl Records!</h2>
     </header>
-    <main id="main" class="main">
+    <main id="main" class="content-wrapper">
         <div>
             <p id="intro">Introduction</p>
             <p class="first-letter">Once upon a time there was a freewebs site called, "Eff, Att and Rew's Tecmo
@@ -95,7 +125,9 @@ User Stories:
 
         <div id="standings">
             <h6 class="football-title football-subtitle">Previous Season:</h6>
-            <li>Eff's Philadelphia Eagles (Gen IV) 16-0, Superbowl Champions</li>
+                <ul>
+                    <li>Eff's Philadelphia Eagles (Gen IV) 16-0, Superbowl Champions</li>
+                </ul>
         </div>
 
         <div>
@@ -106,6 +138,7 @@ User Stories:
                 <meter value="57" min="0" max="197">57</meter> 57 Wins by Effer<br>
                 <meter value="19" min="0" max="197">19</meter> 19 Wins by Rewer<br>
             </div>
+            
         </div>
 
         <div id="rules">
