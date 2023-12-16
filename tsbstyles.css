@@ -18,6 +18,13 @@ User Stories:
 */
 
 :root {
+  --football-color: rgb(51, 38, 4);
+  --grass-color: rgb(43, 88, 37);
+  --dark-grass: rgb(13, 48, 8);
+  --background-color: #d6c3a1;
+  --transparent-bg: #d6c3a199;
+  --transparent-brown: #362404CC;
+  --charcoal: #130c02;
   --black: black;
   --red: red;
   --green: green;
@@ -29,11 +36,7 @@ User Stories:
   --orange: orangered;
   --lightblue: lightblue;
   --lightgreen: lightgreen;
-  --football-color: rgb(51, 38, 4);
-  --grass-color: rgb(43, 88, 37);
-  --dark-grass: rgb(13, 48, 8);
-  --background-color: #d6c3a1;
-  --transparent-bg: #d6c3a199;
+
 }
 
 font-face {
@@ -84,7 +87,7 @@ font-face {
   background-color: var(--transparent-bg);
   padding: 30px;
   border-radius: 18px;
-  border: 8px ridge #362404CC;
+  border: 8px ridge var(--transparent-brown);
   font-family: "Nova Square", Courier, serif;
 }
 
@@ -113,7 +116,7 @@ nav {
   height: 100%;
   top: 0;
   left: 0;
-  max-width: 300px;
+  min-width: 270px;
   border: 2px solid black;
   z-index: 1;
   padding-top: 30px;
@@ -124,7 +127,7 @@ nav {
   display: block;
   padding: 18px 18px 18px 20px;
   border-top: 2px solid black;
-  color: #130c02;
+  color: var(--charcoal);
   background-color: var(--transparent-bg);
 }
 
@@ -137,8 +140,9 @@ footer a:hover,
 .sidenav a:hover {
   color: #faf3e6;
   background-color: var(--football-color);
-  padding: 6px;
+  padding: 18px;
   border-radius: 6px;
+  filter: drop-shadow(18px -18px 18px var(--black));
 }
 
 body {
@@ -168,7 +172,7 @@ div {
 .record-header {
   text-align: center;
   font-size: 1.1rem;
-    font-family: "Nova Square", Courier, serif;
+  font-family: "Nova Square", Courier, serif;
 }
 
 footer {
