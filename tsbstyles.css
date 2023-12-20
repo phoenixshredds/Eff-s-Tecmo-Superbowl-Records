@@ -76,11 +76,9 @@ font-face {
 }
 
 .text-subtitle {
-  display: flex;
   text-align: center;
-  justify-content: center;
   background-color: var(--transparent-bg);
-  padding: 30px;
+  padding: 40px;
   border-radius: 18px;
   border: 8px ridge var(--transparent-brown);
   font-family: "Nova Square", Courier, serif;
@@ -128,8 +126,12 @@ nav {
   width: 270px;
   border: 2px solid black;
   z-index: 1;
-  padding-top: 120px;
   font-weight: bold;
+}
+
+#tsb-cover {
+  padding: 10px 35px 10px 35px;
+  margin: auto;
 }
 
 .sidenav a {

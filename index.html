@@ -1,38 +1,41 @@
 <!--
-User Stories:
+User Stories - To Do:
 √ Splash page with description, rules, updates, and current standings.
 √ Individual page for each record category
 √ Navigation bar on the left
 √ Links to each page on Nav bar
 √ Footer with signature & contact
 √ Complete each page's text content
-- Add favorite team pics to bio page
-- Img Avatars of every team logo for team records pages
+√ Img Avatars of every team logo for team records pages
 √ Img TSB profile page for individual records pages
-- TSB Logo above Nav
-- Latest Standings/Seasons below Nav
-    √ Hover function on records to display player profile
-    - Optional Ideas: 
-        - Comments form
-        √ Select-menu navigation
-        - JS interactive football game
-        - Right side scroll menu of TSB players/records
-        - Two column design like a magazine 
-        - @Media query to single column with narrow mobile screens
-        - JS Audio on record MouseClick: 1 "down", 2 "set", 3+ "hut"
-        - Use proper soundboard for record ("touchdown" "interception" "first down" "sack.")
-        - Script to retrieve latest NFL scores
-        - Embedded highlight clips of TSB gameplay
-        - Create Parent site "Eff's Tecmo Superbowl"
-            - Forum with member signup
-            - Custom ROM page to share rom downloads
-            - Online League Page (Original roster, latest rosters and original roster redrafts)
-        - JS idea: Create a passer rating calculator with form inputs
-            - Make one for TSB formula and one for NFL formula
+√ TSB Logo above Nav
+√ Select-menu navigation
+√ Hover function on records to display player profile   
+- Style Select Menu just like original
+- Latest Standings/Seasons below Nav 
+- JS interactive football game
+- Right side interactive scroll menu of notable TSB players/records
+- JS Audio on record MouseClick: 1 "down", 2 "set", 3+ "hut"
+- Use proper soundboard for record ("touchdown" "interception" "first down" "sack.")
+- Script to retrieve latest NFL scores
+- Embedded highlight clips of TSB gameplay
+- Create Parent site "Eff's Tecmo Superbowl"
+    - Forum with member signup
+    - Custom ROM page to share rom downloads
+    - Online League Page (Original roster, latest rosters and original roster redrafts)
+- JS idea: Create a passer rating calculator with form inputs
+    - Make one for TSB formula and one for NFL formula
+---------------------------------------------------------------
+BUGS/IMPROVEMENTS/KINKS TO FIX:
+- Title and subtitle alignment to center with page
+- No overflow scroll
+- Two column design like a magazine 
+- @Media query to single column with narrow mobile screens
+- Create a max-width media query to prevent over-stretching on ultrawide or having nav too far left.
+
 --->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -41,6 +44,8 @@ User Stories:
 </head>
 
 <nav class="sidenav">
+    <img src="Tecmo_Super_Bowl.jpg" id="tsb-cover"
+        alt="The cover of the original Tecmo Superbowl video game with a football player wearing a New York Giants helmet."/>
     <a href="index.html">Home</a>
     <a href="02-passingrecords.html">Passing Records</a>
     <a href="03-rushingrecords.html">Rushing Records</a>
@@ -125,9 +130,9 @@ User Stories:
 
         <div id="standings">
             <h6 class="football-title football-subtitle">Previous Season:</h6>
-                <ul>
-                    <li>Eff's Philadelphia Eagles (Gen IV) 16-0, Superbowl Champions</li>
-                </ul>
+            <ul>
+                <li>Eff's Philadelphia Eagles (Gen IV) 16-0, Superbowl Champions</li>
+            </ul>
         </div>
 
         <div>
@@ -138,7 +143,7 @@ User Stories:
                 <meter value="57" min="0" max="197">57</meter> 57 Wins by Effer<br>
                 <meter value="19" min="0" max="197">19</meter> 19 Wins by Rewer<br>
             </div>
-            
+
         </div>
 
         <div id="rules">
