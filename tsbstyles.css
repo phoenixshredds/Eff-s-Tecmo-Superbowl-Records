@@ -12,8 +12,8 @@ User Stories:
 √ Football shaped headers
 - Design laces for football header
 - Design seams for football header
-- Refactor color scheme with :root {var(--variable-name)}
-- Convert to column/row design
+√ Refactor color scheme with :root {var(--variable-name)}
+√ Convert to column design
 - Create class for team logo colors: border ridge with primary and seconary team colors, make each team's color a var(--variable-name).
 - Style dropdown menu
 */
@@ -184,15 +184,20 @@ div {
   font-family: "Nova Square", Courier, serif;
 }
 
-footer {
+.framed-bg {
   text-align: center;
   background-color: var(--transparent-bg);
+  color: var(--black);
   padding: 20px;
   border-radius: 18px;
   border: 8px ridge var(--transparent-brown);
-  font-weight: bold;
   font-family: "Nova Square", Courier, serif;
   margin: 20px;
+}
+
+.feats-font {
+  font-family: Courier, serif;
+  font-style: normal;
 }
 
 footer a {
@@ -279,15 +284,16 @@ meter {
 
 /* HEADER PLACEMENT WITH WIDE SCREEN  */
 @media screen and (min-width: 1320px) {
-    #title {
-        display: flex;
-        flex-wrap: wrap;
-        width: 75vw;
-        justify-content: center;
-        align-items: center;
-        padding-top: 100px;
-      }
-      .content-wrapper {
-        padding-top: 120px;
-      }
+  #title {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75vw;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+  }
+
+  .content-wrapper {
+    padding-top: 120px;
+  }
 }
