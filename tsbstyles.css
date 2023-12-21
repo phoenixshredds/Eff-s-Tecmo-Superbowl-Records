@@ -184,6 +184,7 @@ div {
   font-family: "Nova Square", Courier, serif;
 }
 
+/* TRANSPARENT BG WITH BORDER FOR NOTES AND KEYS */
 .framed-bg {
   text-align: center;
   background-color: var(--transparent-bg);
@@ -196,8 +197,9 @@ div {
 }
 
 .feats-font {
-  font-family: Courier, serif;
+  font-family: Tahoma, sans-serif;
   font-style: normal;
+  font-size: 1.2rem;
 }
 
 footer a {
@@ -256,7 +258,8 @@ li>a {
 
 .emphasis {
   font-weight: bold;
-  font-size: 1.11rem;
+  font-size: 1.2rem;
+  font-family: "Nova Square", Courier, serif;
 }
 
 .first-letter::first-letter {
