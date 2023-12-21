@@ -53,35 +53,26 @@ font-face {
   color: whitesmoke;
   background-color: var(--football-color);
   filter: drop-shadow(12px -24px 12px var(--black));
-  border: 2px solid var(--football-color);
   border-radius: 47%;
-  padding: 40px;
-  max-width: 360px;
+  padding: 49px;
+  max-width: 390px;
   margin: 30px auto 30px auto;
   font-family: "Nova Square", Courier, serif;
   font-weight: normal;
   overflow: hidden;
 }
 
-#title {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100vw;
+#football-header {
+  position: fixed;
+  margin-top: 0px;
+  z-index: 1;
 }
 
+/* FOOTBALL STYLE SUB-TITLE */
 .football-subtitle {
   font-weight: normal;
   font-size: 1.35rem;
   max-width: 280px;
-}
-
-.text-subtitle {
-  text-align: center;
-  background-color: var(--transparent-bg);
-  padding: 40px;
-  border-radius: 18px;
-  border: 8px ridge var(--transparent-brown);
-  font-family: "Nova Square", Courier, serif;
 }
 
 /* FOOTBALL LACES */
@@ -129,6 +120,7 @@ nav {
   font-weight: bold;
 }
 
+/* TECMO SUPERBOWL GAME COVER IMG SPACING */
 #tsb-cover {
   padding: 10px 35px 10px 35px;
   margin: auto;
@@ -166,14 +158,14 @@ body {
   margin: 55px 280px 0px 280px;
   padding-left: 1rem;
   font: 16px Lato, sans-serif;
-  overflow: auto;
 }
 
 .content-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 100%);
+  grid-template-columns: repeat(2, 100%);
   grid-gap: 50px;
   overflow: visible;
+  padding-top: 250px;
 }
 
 /* DIV BACKGROUND HAS FOOTBALL FIELD COLOR SCHEME */
@@ -193,11 +185,14 @@ div {
 }
 
 footer {
-  font-weight: bold;
-  background-color: var(--transparent-bg);
-  padding: 30px;
-  border-radius: 47%;
   text-align: center;
+  background-color: var(--transparent-bg);
+  padding: 20px;
+  border-radius: 18px;
+  border: 8px ridge var(--transparent-brown);
+  font-weight: bold;
+  font-family: "Nova Square", Courier, serif;
+  margin: 20px;
 }
 
 footer a {
@@ -272,4 +267,27 @@ li>a {
 
 meter {
   width: 30%;
+}
+
+/* NARROW SCREEN CONVERTS TO SINGLE GRID */
+@media screen and (max-width: 1320px) {
+  .content-wrapper {
+    grid-template-columns: repeat(1, 100%);
+  }
+}
+
+
+/* HEADER PLACEMENT WITH WIDE SCREEN  */
+@media screen and (min-width: 1320px) {
+    #title {
+        display: flex;
+        flex-wrap: wrap;
+        width: 75vw;
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+      }
+      .content-wrapper {
+        padding-top: 120px;
+      }
 }
