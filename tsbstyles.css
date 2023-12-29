@@ -165,8 +165,8 @@ body {
 /* Grid: 2 column layout for main content blocks */
 .content-wrapper {
   display: grid;
-  grid-template-columns: repeat(2, 100%);
-  grid-gap: 10px;
+  grid-template-columns: repeat(3, 100%);
+  gap: 2rem;
   overflow: visible;
 }
 
@@ -175,7 +175,6 @@ div {
   border: 3px solid var(--football-color);
   border-radius: 6px;
   padding: 10px;
-  margin: 10px 0 10px 0;
   background-color: var(--grass-color);
   color: white;
 }
@@ -293,6 +292,11 @@ meter {
   }
 }
 
+@media screen and (min-width: 1320px) and (max-width: 1820px) {
+  .content-wrapper {
+    grid-template-columns: repeat(2, 100%);
+  }
+}
 
 /* Adjusts header placement with wide screen displays */
 @media screen and (min-width: 1320px) {
@@ -302,6 +306,6 @@ meter {
     width: 75vw;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 120px;
   }
 }
