@@ -144,7 +144,6 @@ footer a:hover,
 .sidenav a:hover {
   color: #faf3e6;
   background-color: var(--football-color);
-  padding: 18px;
   border-radius: 6px;
   filter: drop-shadow(18px -18px 18px var(--black));
 }
@@ -165,7 +164,7 @@ body {
 /* Grid: 2 column layout for main content blocks */
 .content-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 100%);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   overflow: visible;
 }
@@ -174,7 +173,7 @@ body {
 div {
   border: 3px solid var(--football-color);
   border-radius: 6px;
-  padding: 10px;
+  padding: 10px 30px 10px 30px;
   background-color: var(--grass-color);
   color: white;
 }
@@ -225,16 +224,18 @@ li:hover {
   cursor: pointer;
 }
 
+
 /* Displays profile image of player or team when cursor hovers over a record list element. */
 .hover-img a:hover span {
   display: block;
-  height: 10px;
+  visibility: visible;
+  height: 0px;
 }
 
 /* Hides the profile image from display */
 .hover-img a span {
-  position: absolute;
   display: none;
+  visibility: hidden;
   z-index: 99;
 }
 
