@@ -1,12 +1,3 @@
-/*
-- Right side images of prominent record holders
-- Div background like a football field
-- Design laces for football header
-- Design seams for football header
-- Create class for team logo colors: border ridge with primary and seconary team colors, make each team's color a var(--variable-name).
-- Style dropdown menu
-*/
-
 /* Global color settings */
 :root {
   --football-color: rgb(51, 38, 4);
@@ -46,17 +37,9 @@ font-face {
   border-radius: 47%;
   padding: 49px;
   width: 390px;
-  margin: 30px auto 30px auto;
   font-family: "Nova Square", Courier, serif;
   font-weight: normal;
   overflow: hidden;
-}
-
-/* Football header positioning */
-#football-header{
-  position: fixed;
-  margin-top: 0px;
-  z-index: 1;
 }
 
 /* Football sub-title styling. Note: Sub-title is differentiated from header by being used within the main content blocks rather than at the top of the page. */
@@ -64,7 +47,17 @@ font-face {
   font-weight: normal;
   font-size: 1.35rem;
   max-width: 280px;
-} 
+  margin-top: 20px;
+}
+
+/* Sets the display and positioning of football header */
+#title {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75vw;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Football laces */
 /*.horizontal-lace::before {
@@ -79,11 +72,6 @@ font-face {
   transform: translateY(-50%);
   border-radius: 100% 100% 100% 100% / 70% 75%;
 }*/
-
-/* Home page spacing */
-.home {
-  padding-top: 250px;
-}
 
 /* Key header text settings */
 .key-header {
@@ -154,9 +142,8 @@ body {
   background-image: url(newspaper.jpg);
   background-repeat: repeat-x;
   background-attachment: fixed;
-  display: block;
-  width: 480px;
   margin: 55px 280px 0px 280px;
+  width: 480px;
   padding-left: 1rem;
   font: 16px Lato, sans-serif;
 }
@@ -299,14 +286,3 @@ meter {
   }
 }
 
-/* Adjusts header placement with wide screen displays */
-@media screen and (min-width: 1320px) {
-  #title {
-    display: flex;
-    flex-wrap: wrap;
-    width: 75vw;
-    justify-content: center;
-    align-items: center;
-    padding-top: 120px;
-  }
-}
