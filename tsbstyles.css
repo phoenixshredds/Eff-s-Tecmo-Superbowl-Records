@@ -21,9 +21,9 @@
 }
 
 /* Global font settings */
-font-face {
+@font-face {
   font-family: "Nova Square";
-  src: local("NovaSquare-Regular") local("Nova Square") format("truetype") format("ttf");
+  src: local("NovaSquare-Regular"), local("Nova Square"), format("truetype"), format("ttf");
 }
 
 /* Football-shaped header */
@@ -35,8 +35,8 @@ font-face {
   background-color: var(--football-color);
   filter: drop-shadow(12px -24px 12px var(--black));
   border-radius: 47%;
-  padding: 49px;
-  width: 390px;
+  padding: 3.125rem;
+  width: 24.375rem;
   font-family: "Nova Square", Courier, serif;
   font-weight: normal;
   overflow: hidden;
@@ -51,7 +51,7 @@ font-face {
 }
 
 /* Sets the display and positioning of football header */
-#title {
+.title {
   display: flex;
   flex-wrap: wrap;
   width: 75vw;
@@ -89,7 +89,7 @@ font-face {
 }
 
 /* Introduction text settings */
-#intro {
+.intro {
   text-align: center;
   font-size: 1.75rem;
   font-family: "Nova Square", Courier, serif;
@@ -285,4 +285,3 @@ meter {
     grid-template-columns: repeat(2, 100%);
   }
 }
-
