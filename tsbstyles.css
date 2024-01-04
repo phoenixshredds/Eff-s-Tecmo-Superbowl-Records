@@ -7,17 +7,7 @@
   --transparent-bg: #d6c3a199;
   --transparent-brown: #362404CC;
   --charcoal: #130c02;
-  --black: black;
-  --red: red;
-  --green: green;
-  --gold: gold;
-  --yellow: yellow;
-  --white: white;
-  --blue: blue;
-  --navy: navy;
-  --orange: orangered;
-  --lightblue: lightblue;
-  --lightgreen: lightgreen;
+  --laces: #faf8f3;
 }
 
 /* Global font settings */
@@ -26,114 +16,144 @@
   src: local("NovaSquare-Regular"), local("Nova Square"), format("truetype"), format("ttf");
 }
 
+/* Side navigation menu */
+nav {
+  border: 2px solid var(--charcoal);
+  z-index: 1;
+  font-weight: bold;
+  grid-area: sidenav;
+  text-align: center;
+}
+
+nav > img {
+  padding: 1rem;
+}
+
+/* Side navigation link styling */
+.sidenav a {
+  display: block;
+  border-top: 2px solid var(--charcoal);
+  color: var(--charcoal);
+  background-color: var(--transparent-bg);
+  padding: 1rem;
+}
+
+/* Side navigation bottom border */
+.sidenav a:last-of-type {
+  border-bottom: 2px solid var(--charcoal);
+}
+
+/* Container Grid Layout */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: .5fr .5fr .5fr;
+  grid-template-areas: 
+  "sidenav content-1 content-2 content-3" 
+  "sidenav content-4 content-5 content-6"
+  "sidenav content-7 content-8 content-8"  
+}
+
+.content-1 {
+  grid-area: content-1;
+}
+.content-2 {
+  grid-area: content-2;
+}
+.content-3 {
+  grid-area: content-3;
+}
+.content-4 {
+  grid-area: content-4;
+}
+.content-5 {
+  grid-area: content-5;
+}
+.content-6 {
+  grid-area: content-6;
+}
+.content-7 {
+  grid-area: content-7;
+}
+.content-8 {
+  grid-area: content-8;
+}
+
+/* Content block color scheme (football field) */
+.content-1, .content-2, .content-3, .content-4, .content-5, .content-6, .content-7, .content-8 {
+  border: 3px solid var(--football-color);
+  border-radius: 0.3rem;
+  background-color: var(--grass-color);
+  color: var(--laces);
+  padding: 1rem;
+  margin: 1rem;
+}
+
 /* Football-shaped header */
 .football-title {
   justify-content: center;
   text-align: center;
   position: relative;
-  color: whitesmoke;
+  margin: 1rem auto;
+  color: var(--laces);
   background-color: var(--football-color);
-  filter: drop-shadow(12px -24px 12px var(--black));
+  filter: drop-shadow(0.75rem -1.5rem 0.75rem var(--charcoal));
   border-radius: 47%;
   padding: 3.125rem;
   width: 24.375rem;
-  font-family: "Nova Square", Courier, serif;
+  font-family: "Nova Square", serif;
   font-weight: normal;
   overflow: hidden;
+  z-index: 0;
 }
 
 /* Football sub-title styling. Note: Sub-title is differentiated from header by being used within the main content blocks rather than at the top of the page. */
 .football-subtitle {
   font-weight: normal;
   font-size: 1.35rem;
-  max-width: 280px;
-  margin-top: 20px;
 }
-
-/* Sets the display and positioning of football header */
-.title {
-  display: flex;
-  flex-wrap: wrap;
-  width: 75vw;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Football laces */
-/*.horizontal-lace::before {
-  content: "";
-  display: block;
-  width: 30%;
-  height: 2px;
-  background-color: #fff;
-  position: absolute;
-  top: 20%;
-  left: 35%;
-  transform: translateY(-50%);
-  border-radius: 100% 100% 100% 100% / 70% 75%;
-}*/
 
 /* Key header text settings */
 .key-header {
   font-weight: bold;
-  font-size: 1.5rem;
-  font-family: "Nova Square", Courier, serif;
+  font-size: 1.75rem;
 }
 
 /* Key content text settings */
 .key {
   font-weight: normal;
-  font-size: 1rem;
+  font-size: 1.1rem;
   text-align: left;
-  font: 1.15rem Lato, sans-serif;
+}
+
+/* Creates a semi-transparent background with a framed border */
+.framed-bg {
+  text-align: center;
+  background-color: var(--transparent-bg);
+  color: var(--charcoal);
+  border-radius: 0.75em;
+  border: 0.5rem ridge var(--transparent-brown);
 }
 
 /* Introduction text settings */
 .intro {
   text-align: center;
   font-size: 1.75rem;
-  font-family: "Nova Square", Courier, serif;
+  font-family: "Nova Square", serif;
 }
 
-/* Tecmo Superbowl logo spacing */
+/* Tecmo Superbowl logo spacing and sizing */
 #tsb-cover {
-  padding: 10px 35px 10px 35px;
-  margin: auto;
-}
-
-/* Side navigation menu */
-nav {
-  position: fixed;
-  height: 100%;
-  top: 0;
-  left: 0;
-  width: 270px;
-  border: 2px solid black;
-  z-index: 1;
-  font-weight: bold;
-}
-
-/* Side navigation link styling */
-.sidenav a {
-  display: block;
-  padding: 18px 18px 18px 20px;
-  border-top: 2px solid black;
-  color: var(--charcoal);
-  background-color: var(--transparent-bg);
-}
-
-/* Side navigation bottom border */
-.sidenav a:last-of-type {
-  border-bottom: 2px solid black;
-}
+  height: 14rem;
+  }
 
 /* Cursor hover effect for navigation and footer links. Styled with football color scheme.  */
 footer a:hover,
 .sidenav a:hover {
-  color: #faf3e6;
+  color: var(--laces);
   background-color: var(--football-color);
-  border-radius: 6px;
-  filter: drop-shadow(18px -18px 18px var(--black));
+  border-radius: 0.3em;
+  filter: drop-shadow(1.1rem -1.1rem 1.1rem var(--charcoal));
 }
 
 /* Global styling settings for content and background. */
@@ -142,51 +162,18 @@ body {
   background-image: url(newspaper.jpg);
   background-repeat: repeat-x;
   background-attachment: fixed;
-  margin: 55px 280px 0px 280px;
-  width: 480px;
-  padding-left: 1rem;
-  font: 16px Lato, sans-serif;
-}
-
-/* Grid: 2 column layout for main content blocks */
-.content-wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  overflow: visible;
-}
-
-/* Content block color scheme (football field) */
-div {
-  border: 3px solid var(--football-color);
-  border-radius: 6px;
-  padding: 10px 30px 10px 30px;
-  background-color: var(--grass-color);
-  color: white;
+  font: 1em Lato, sans-serif;
 }
 
 /* Record header text settings */
 .record-header {
   text-align: center;
   font-size: 1.1rem;
-  font-family: "Nova Square", Courier, serif;
-}
-
-/* Creates a semi-transparent background with a framed border */
-.framed-bg {
-  text-align: center;
-  background-color: var(--transparent-bg);
-  color: var(--black);
-  padding: 20px;
-  border-radius: 18px;
-  border: 8px ridge var(--transparent-brown);
-  font-family: "Nova Square", Courier, serif;
-  margin: 20px;
+  font-family: "Nova Square", serif;
 }
 
 /* Custom font settings for feats page notes */
 .feats-font {
-  font-family: Tahoma, sans-serif;
   font-style: normal;
   font-size: 1.2rem;
 }
@@ -201,16 +188,15 @@ li {
   padding: 2.5px;
 }
 
-/* Highlights list elements with cursor hover. Style like football field (dark green bg, white text) */
+/* Highlights list elements with cursor hover. Style like football field (dark green bg, var(--laces) text) */
 li:hover {
   background-color: var(--dark-grass);
-  color: #faf3e6;
-  border-radius: 8px;
-  border: 1.5px solid #faf3e6;
+  color: var(--laces);
+  border-radius: 0.2rem;
+  border: 1.5px solid var(--laces);
   z-index: 1;
   cursor: pointer;
 }
-
 
 /* Displays profile image of player or team when cursor hovers over a record list element. */
 .hover-img a:hover span {
@@ -222,29 +208,27 @@ li:hover {
 /* Hides the profile image from display */
 .hover-img a span {
   display: none;
-  visibility: hidden;
-  z-index: 99;
 }
 
 /* Styles the hover image */
 .hover-img img {
-  border-radius: 12px;
-  filter: drop-shadow(24px -24px 12px #000);
-  margin: -250px 0 0 260px;
-  width: 520px;
+  border-radius: 0.75rem;
+  filter: drop-shadow(1.5rem -1.75rem 00.75rem #000);
+  width: 60vw;
+  margin-top: 1.5rem; 
   color: #000;
   font-weight: bold;
-  border: 6px solid var(--football-color);
+  border: 0.4rem solid var(--football-color);
 }
 
 /* Adjusts the size of logos */
 .logo img {
-  width: 250px;
+  width: 25%;
 }
 
 /* Styles font of list links */
 li>a {
-  color: white;
+  color: var(--laces);
   text-decoration: none;
 }
 
@@ -252,7 +236,7 @@ li>a {
 .emphasis {
   font-weight: bold;
   font-size: 1.2rem;
-  font-family: "Nova Square", Courier, serif;
+  font-family: "Nova Square", serif;
 }
 
 /* Creates magazine style large letter for the first letter of a paragraph */
@@ -273,15 +257,19 @@ meter {
   width: 30%;
 }
 
-/* Converts narrow screens to a single grid */
-@media screen and (max-width: 1320px) {
-  .content-wrapper {
-    grid-template-columns: repeat(1, 100%);
-  }
+/* Positions and scales the footer */
+footer {
+  width: 40vw;
+  margin: auto;
+  padding: 1rem;
 }
 
-@media screen and (min-width: 1320px) and (max-width: 1820px) {
-  .content-wrapper {
-    grid-template-columns: repeat(2, 100%);
-  }
+/* Converts narrow screens to a single grid 
+@media screen and (max-width: ) {
+
 }
+
+Limits display width for ultra-wide displays 
+@media screen and () {
+
+}*/
