@@ -149,6 +149,42 @@ const shuffle = () => {
     setPlayButtonAccessibleText();
 };
 
+const deleteSound = (id) => {
+    if (userData?.currentSound?.id === id) {
+        userData.currentSound = null;
+        userData.soundCurrentTime = 0;
+
+        pauseSound();
+        setPlayerDisplay();
+    }
+
+    userData.sounds = userData?.sounds.filter((sound) => sound.id !== id);
+    renderSounds(userData?.sounds);
+    highlightCurrentSound();
+    setPlayButtonAccessibleText();
+
+    if (userData.sounds.length === 0) {
+        const resetButton = document.createElement("button");
+        const resetText = document.createTextNode("Reset Playlist");
+
+        resetButton.id = "reset";
+        resetButton.ariaLabel = "Reset playlist";
+        resetButton.appendChild(resetText);
+        playlistSounds.appendChild(resetButton);
+
+        resetButton.addEventListener("click", () => {
+            userData.sounds = [...allSounds];
+
+            renderSounds(userData?.sounds);
+            setPlayButtonAccessibleText();
+            resetButton.remove();
+        });
+
+    }
+
+};
+
+
 const setPlayerDisplay = () => {
     const playingSound = document.getElementById("player-sound-title");
     const soundArtist = document.getElementById("player-sound-artist");
@@ -181,7 +217,7 @@ const renderSounds = (array) => {
           <span class="playlist-sound-title">${sound.title}</span>
           <span class="playlist-sound-duration">${sound.duration}</span>
       </button>
-      <button class="playlist-sound-delete" aria-label="Delete ${sound.title}">
+      <button onclick="deleteSound(${sound.id})" class="playlist-sound-delete" aria-label="Delete ${sound.title}">
             
       </button>
       </li>
@@ -218,4 +254,22 @@ previousButton.addEventListener("click", playPreviousSound);
 
 shuffleButton.addEventListener("click", shuffle);
 
+audio.addEventListener("ended", () => {
+    const currentSoundIndex = getCurrentSoundIndex();
+    const nextSoundExists = userData?.sounds[currentSoundIndex + 1] !== undefined;
+
+    if (nextSoundExists) {
+        playNextSound();
+    } else {
+        userData.currentSound = null;
+        userData.soundCurrentTime = 0;
+        pauseSound();
+        setPlayerDisplay();
+        highlightCurrentSound();
+        setPlayButtonAccessibleText();
+
+    }
+});
+
 renderSounds(userData?.sounds);
+setPlayButtonAccessibleText();

@@ -50,7 +50,7 @@
 .container {
   display: grid;
   grid-template-columns: .5fr 1fr 1fr 1fr;
-  grid-auto-rows: auto;
+    grid-auto-rows: min-content;
   grid-template-areas:
     "sidenav content-1 content-2 content-3"
     "sidenav content-4 content-5 content-6"
@@ -170,7 +170,7 @@ td, th {
   font-family: "Nova Square", serif;
   font-weight: normal;
   font-size: 1.75em;
-  z-index: 0;
+  z-index: -1;
 }
 
 /* Football sub-title styling. Note: Sub-title is differentiated from header by being used within the main content blocks rather than at the top of the page. */
@@ -370,7 +370,7 @@ footer {
   .container {
     display: grid;
     grid-template-columns: .5fr 1fr;
-    grid-template-rows: .5fr .5fr .5fr .5fr .5fr .5fr .5fr .5fr;
+    grid-auto-rows: min-content;
     grid-template-areas:
       "sidenav content-1"
       "sidenav content-2"
@@ -398,7 +398,7 @@ footer {
   .container {
     display: grid;
     grid-template-columns: .3fr 1fr 1fr;
-    grid-template-rows: .5fr .5fr .5fr .5fr .5fr .5fr;
+    grid-auto-rows: min-content;
     grid-template-areas:
       "sidenav content-1 content-2"
       "sidenav content-3 content-4"
