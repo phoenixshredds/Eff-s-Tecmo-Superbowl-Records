@@ -50,12 +50,11 @@
 .container {
   display: grid;
   grid-template-columns: .5fr 1fr 1fr 1fr;
-    grid-auto-rows: min-content;
   grid-template-areas:
     "sidenav content-1 content-2 content-3"
     "sidenav content-4 content-5 content-6"
     "sidenav content-7 content-8 content-9"
-    "sidenav content-10 content-11 content-12"
+    "sidenav content-10 content-11 content-12";
 }
 
 .content-1 {
@@ -170,7 +169,7 @@ td, th {
   font-family: "Nova Square", serif;
   font-weight: normal;
   font-size: 1.75em;
-  z-index: -1;
+  z-index: 1;
 }
 
 /* Football sub-title styling. Note: Sub-title is differentiated from header by being used within the main content blocks rather than at the top of the page. */
@@ -256,7 +255,6 @@ li:hover {
   color: var(--laces);
   border-radius: 0.2rem;
   border: 1.5px solid var(--laces);
-  z-index: 1;
   cursor: pointer;
 }
 
@@ -266,7 +264,6 @@ tr:hover {
   color: var(--laces);
   border-radius: 0.2rem;
   border: 1.5px solid var(--laces);
-  z-index: 1;
   cursor: pointer;
 }
 
@@ -284,6 +281,7 @@ tr:hover {
 
 /* Styles the hover image */
 .hover-img img {
+  position: absolute;
   border-radius: 0.75rem;
   filter: drop-shadow(1.5rem -1.75rem 00.75rem #000);
   width: 100%;
@@ -291,6 +289,12 @@ tr:hover {
   color: #000;
   font-weight: bold;
   border: 0.4rem solid var(--football-color);
+  z-index: 2;
+}
+
+/* Necessary to make z-index of hover-img stackable */
+.hover-img {
+  position: relative;
 }
 
 /* Adjusts the size of logos */
