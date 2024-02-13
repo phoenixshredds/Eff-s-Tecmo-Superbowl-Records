@@ -6,58 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eff's Tecmo Superbowl Records</title>
     <link href="tsbstyles.css" rel="stylesheet" type="text/css" />
+    <link src="script.js" src="web-script.js" />
 </head>
-
-
-<nav class="sidenav">
-    <img src="Tecmo_Super_Bowl.jpg" id="tsb-cover"
-        alt="The cover of the original Tecmo Superbowl video game with a football player wearing a New York Giants helmet." />
-    <a href="index.html">Home</a>
-    <a href="02-passing-records.html">Passing Records</a>
-    <a href="03-rushing-records.html">Rushing Records</a>
-    <a href="04-receiving-all-purpose-records.html">Receiving/All-Purpose Records</a>
-    <a href="05-defense-specialteams-records.html">Defense/Special Teams Records</a>
-    <a href="06-single-season-team-records.html">Single Season Team Records</a>
-    <a href="07-single-game-team-records.html">Single Game Team Records</a>
-    <a href="08-notable-feats.html">Notable Feats</a>
-    <a href="09-player-bios-stats.html">Player Bios and Career Stats</a>
-</nav>
-
-<!--  DROPDOWN NAVIGATION 
-
-<label for="side-nav">
-    <select name="home" id="home">
-        <option value="home"><a href="index.html">Home</a></option>
-    </select>
-    <select name="individual-records" id="individual-records">
-        <option value="select">Individual Records:</option>
-        <option value="passing"><a href="02-passingrecords.html">Passing Records</a></option>
-        <option value="rushing"><a href="03-rushingrecords.html">Rushing Records</a></option>
-        <option value="receiving"><a href="04-receivingandallpurposerecords.html">Receiving/All-Purpose Records</a>
-        </option>
-        <option value="defense-special-teams"><a href="05-DefenseSpecialTeamsRecords.html">Defense/Special Teams
-                Records</a></option>
-    </select>
-    <select value="select">
-        <option value="team-records">Team Records:</option>
-        <option value="single-season"><a href="06-SingleSeasonTeamRecords.html">Single Season Team Records</a></option>
-        <option value="single-game"><a href="07-SingleGameTeamRecords.html">Single Game Team Records</a></option>
-    </select>
-    <select name="more" id="more">
-        <option value="other">Feats and Bios:</option>
-        <option value="feats"><a href="08-NotableFeats.html">Notable Feats</a></option>
-        <option value="bio"><a href="09-PlayerBiosAndStats.html">Player Bios and Career Stats</a></option>
-    </select>
-</label>
--->
 
 <body>
     <header class="title">
         <h1 class="football-title">Welcome to the NEW Eff's Tecmo Superbowl Records</h1>
     </header>
+    <div class="container">
 
-    <main id="main" class="content-wrapper home">
-        <div>
+        <nav class="sidenav">
+            <img src="Tecmo_Super_Bowl.jpg" id="tsb-cover"
+                alt="The cover of the original Tecmo Superbowl video game with a football player wearing a New York Giants helmet." />
+            <a href="index.html">Home</a>
+            <a href="02-passing-records.html">Passing Records</a>
+            <a href="03-rushing-records.html">Rushing Records</a>
+            <a href="04-receiving-all-purpose-records.html">Receiving & All-Purpose Records</a>
+            <a href="05-defense-specialteams-records.html">Defense & Special Teams Records</a>
+            <a href="06-single-season-team-records.html">Single Season Team Records</a>
+            <a href="07-single-game-team-records.html">Single Game Team Records</a>
+            <a href="08-notable-feats.html">Notable Feats</a>
+            <a href="09-player-bios-stats.html">Player Bios and Career Stats</a>
+        </nav>
+
+        <!-- Soundboard Player
+        <div id="playlist-container" class="playlist-container">
+            <div id="playlist" class="playlist">
+                <div id="playlist-buttons" class="playlist-buttons">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="player-display">
+                <div class="player-display-sound">
+                    <p id="player-sound-title"></p>
+                </div>
+            </div>
+        </div>
+-->
+        <div class="content-1">
             <p class="intro">Introduction</p>
             <p class="first-letter">Once upon a time there was a freewebs site called, "Eff, Att and Rew's Tecmo
                 Superbowl Records." That
@@ -68,7 +55,7 @@
             </p>
         </div>
 
-        <div>
+        <div class="content-2">
             <h3 class="football-title football-subtitle"><span></span>Total Records Leaders:</h3>
             <div class="meter">
                 <meter value="87" min="0" max="87">87</meter> 87 Records Tracked</br>
@@ -79,14 +66,15 @@
             </div>
         </div>
 
-        <div id="latest-updates">
+        <div class="content-3" id="latest-updates">
             <h4 class="football-title football-subtitle horizontal-lace">Latest Updates:</h4>
-            <p class="first-letter">This new look records site includes new records like Most Passes W/O an Interception
+            <p class="first-letter">This new look records site includes new records like Most Passes W/O an
+                Interception
                 (Season), QB Total
                 Touchdowns (Passing + Rushing) and more.</p>
         </div>
 
-        <div id="standings">
+        <div class="content-4" id="standings">
             <h5 class="football-title football-subtitle">Latest Season Standings:</h5>
             <ul>
                 <li>Eff's Phoenix Cardinals (Gen IV) 2-0</li>
@@ -94,14 +82,14 @@
             </ul>
         </div>
 
-        <div id="standings">
+        <div class="content-5" id="standings">
             <h6 class="football-title football-subtitle">Previous Season:</h6>
             <ul>
                 <li>Eff's Philadelphia Eagles (Gen IV) 16-0, Superbowl Champions</li>
             </ul>
         </div>
 
-        <div>
+        <div class="content-6">
             <p class="football-title football-subtitle">Current Streak (including post-season):</p>
             <div class="meter">
                 <meter value="197" min="0" max="197">197</meter> 197 Wins (Eff's Record)</br>
@@ -112,9 +100,25 @@
 
         </div>
 
-        <div id="rules">
+        <div class="content-7" id="rosters">
+            <p class="football-title football-subtitle">What about rosters?:</p>
+            <p>You may have noticed the present records are with the original 1991 Tecmo Superbowl roster. New to
+                this
+                site is
+                the inclusion of the 1993 roster (from the SNES version). I have finalized the roster to include
+                updated
+                schedule (modified to fit into 17 weeks for NES), accurate kr/pr (excluding defensive backs),
+                playbooks,
+                and simulation ratings. Any records with the '93 roster will count for the NES.</p>
+            <p> A copy of all records will be made for the SNES version. As of now, we have no seasons in the books
+                for
+                SNES.</p>
+        </div>
+
+        <div class="content-8" id="rules">
             <p class="football-title football-subtitle">Rules of Play:</p>
-            <p class="first-letter">We don't just play the game however we want. There are certain rules we must follow
+            <p class="first-letter">We don't just play the game however we want. There are certain rules we must
+                follow
                 for
                 these records to
                 be considered valid and fair. Anyone who has played TSB enough knows there are ways to cheat the
@@ -144,30 +148,185 @@
                 rule to allow freedom of position swapping. After all, no WR is going to be Bo Jackson or Christian
                 Okoye.
             </p>
-            <p>As this is all enforced via honor system. there are a few other considerations: We look down upon using
+            <p>As this is all enforced via honor system. there are a few other considerations: We look down upon
+                using
                 save
-                states to constantly re-try to play games for records. In general, we just play the games and they fall
+                states to constantly re-try to play games for records. In general, we just play the games and they
+                fall
                 as
                 they
                 may.</p>
         </div>
+        <div class="content-9">
+            <table>
+                <caption class="table-caption">Wall of Fame - Individual Records</caption>
+                <tr class="row-0">
+                    <th>Player</th>
+                    <th>Record</th>
+                    <th>Stats</th>
+                    <th>User</th>
+                    <th>Generation</th>
+                </tr>
+                <tr>
+                    <td>QB Bills</td>
+                    <td>Passer Rating (Season)</td>
+                    <td>305.9 rating</td>
+                    <td>Eff</td>
+                    <td>Gen III</td>
+                </tr>
+                <tr>
+                    <td>Warren Moon</td>
+                    <td>Passing Yards (Season)</td>
+                    <td>6200 yards</td>
+                    <td>Rew</td>
+                    <td>Gen I</td>
+                </tr>
+                <tr>
+                    <td>QB Eagles</td>
+                    <td>Total Touchdowns (Season)</td>
+                    <td>109 touchdowns</td>
+                    <td>Eff</td>
+                    <td>Gen IV</td>
+                </tr>
 
-        <div id="rosters">
-            <p class="football-title football-subtitle">What about rosters?:</p>
-            <p>You may have noticed the present records are with the original 1991 Tecmo Superbowl roster. New to
-                this
-                site is
-                the inclusion of the 1993 roster (from the SNES version). I have finalized the roster to include
-                updated
-                schedule (modified to fit into 17 weeks for NES), accurate kr/pr (excluding defensive backs),
-                playbooks,
-                and simulation ratings. Any records with the '93 roster will count for the NES.</p>
-            <p> A copy of all records will be made for the SNES version. As of now, we have no seasons in the books
-                for
-                SNES.</p>
+                <tr>
+                    <td>Bo Jackson</td>
+                    <td>Rushing Yards (Game)</td>
+                    <td>474 yards</td>
+                    <td>Eff</td>
+                    <td>n/a</td>
+                </tr>
+                <tr>
+                    <td>Neal Anderson</td>
+                    <td>Scrimmage Touchdowns (Season)</td>
+                    <td>95 touchdowns</td>
+                    <td>Att</td>
+                    <td>Gen I</td>
+                </tr>
+                <tr>
+                    <td>Drew Hill</td>
+                    <td>Receiving Yards (Season)</td>
+                    <td>3448 yards</td>
+                    <td>Eff</td>
+                    <td>Gen IV</td>
+                </tr>
+                <tr>
+                    <td>Mike Singletary</td>
+                    <td>Sacks (Season)</td>
+                    <td>98 sacks</td>
+                    <td>Att</td>
+                    <td>Gen I</td>
+                </tr>
+
+                <tr>
+                    <td>Gill Byrd, Dave Waymer</td>
+                    <td>Interceptions (Season)</td>
+                    <td>18 Interceptions</td>
+                    <td>Cpu</td>
+                    <td>n/a</td>
+                </tr>
+                <tr>
+                    <td>Craig Heyward</td>
+                    <td>Total Return Touchdowns (Season)</td>
+                    <td>12 touchdowns</td>
+                    <td>Eff</td>
+                    <td>Gen IV</td>
+                </tr>
+                <tr>
+                    <td>Craig Heyward</td>
+                    <td>Kick Return Avg (Season)</td>
+                    <td>36.4 yards per return</td>
+                    <td>Eff</td>
+                    <td>Gen IV</td>
+                </tr>
+            </table>
         </div>
-    </main>
+        <div class="content-10">
+            <table>
+                <caption class="table-caption">Wall of Fame - Team Records</caption>
+                <tr class="row-0">
+                    <th>Team</th>
+                    <th>Record</th>
+                    <th>Stats</th>
+                    <th>User</th>
+                    <th>Generation</th>
+                </tr>
+                <tr>
+                    <td>Philadelphia Eagles</td>
+                    <td>Total Offense (Season)</td>
+                    <td>6484 yards</td>
+                    <td>Eff</td>
+                    <td>Gen IV</td>
+                </tr>
+                <tr>
+                    <td>New York Giants</td>
+                    <td>Total Defense (Season)</td>
+                    <td>1465 yards</td>
+                    <td>Eff</td>
+                    <td>n/a</td>
+                </tr>
+                <tr>
+                    <td>Chicago Bears</td>
+                    <td>Passing Defense (Season)</td>
+                    <td>447 yards</td>
+                    <td>Att</td>
+                    <td>Gen I</td>
+                </tr>
+                <tr>
+                    <td>Kansas City Chiefs</td>
+                    <td>Points Scored (Season)</td>
+                    <td>1002 points</td>
+                    <td>Eff</td>
+                    <td>Gen IV</td>
+                </tr>
+                <tr>
+                    <td>Pittsburgh Steelers</td>
+                    <td>Points Against (Season)</td>
+                    <td>39 points</td>
+                    <td>Eff</td>
+                    <td>n/a</td>
+                </tr>
+                <tr>
+                    <td>Kansas City Chiefs</td>
+                    <td>Total Offensive Touchdowns (Season)</td>
+                    <td>125 touchdowns</td>
+                    <td>Eff</td>
+                    <td>Gen IV</td>
+                </tr>
+                <tr>
+                    <td>San Francisco 49ers</td>
+                    <td>Total Interceptions (Season)</td>
+                    <td>21 interceptions</td>
+                    <td>Cpu</td>
+                    <td>n/a</td>
+                </tr>
+                <tr>
+                    <td>Miami Dolphins</td>
+                    <td>Passing Yards (Game)</td>
+                    <td>590 yards</td>
+                    <td>Eff</td>
+                    <td>n/a</td>
+                </tr>
+                <tr>
+                    <td>Los Angeles Raiders</td>
+                    <td>Rushing Yards (Game)</td>
+                    <td>527 yards</td>
+                    <td>Cpu</td>
+                    <td>n/a</td>
+                </tr>
+                <tr>
+                    <td>Chicago Bears, Philadelphia Eagles</td>
+                    <td>Points Scored (Game)</td>
+                    <td>89 points</td>
+                    <td>Att, Eff</td>
+                    <td>Gen I, Gen III</td>
+                </tr>
+            </table>
+        </div>
+    </div>
 </body>
+
+
 <footer class="framed-bg">
     <i>
         <p>&copyCopyright Jeffrey Hill, 2023.</p>
@@ -175,4 +334,5 @@
     </i>
 </footer>
 <br><br>
+
 </html>

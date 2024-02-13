@@ -6,7 +6,7 @@ As of now, I am using this file as a placeholder brainstorm and to-do list.
 # User Stories - To Do:
 
 - Add grid style to all pages (.content-wrapper)
-- Style dropdown nav just like fixed side nav
+    - Consider a flex alternative with more simple code.
 - Latest Standings/Seasons below Nav 
 - Right side interactive scroll menu of notable TSB players/records
 - JS Audio on record MouseClick: 1 "down", 2 "set", 3+ "hut"
@@ -32,5 +32,5 @@ As of now, I am using this file as a placeholder brainstorm and to-do list.
 
 ---------------------------------------------------------------
 BUGS/IMPROVEMENTS/KINKS TO FIX:
-- Create a max-width media query to prevent over-stretching on ultrawide or having nav too far left.
-- Default zoom is too close on mobile. Find a fix to either adjust the scale or zoom out the display. Alternatively, make side nav display at the top so its all one column.
+- Create a max-width media query to prevent over-stretching on ultrawide or having nav too far left (AND/OR) convert side nav to a column that floats left.
+- Default zoom is too close on mobile. Find a fix to either adjust the scale or zoom out the display. Alternatively, make side nav display at the top so its all one column. Update: Changing all pixels to em/percentages, will use media queries to make a single column view for mobile.
