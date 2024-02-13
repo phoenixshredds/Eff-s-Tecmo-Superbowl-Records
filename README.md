@@ -6,7 +6,7 @@ As of now, I am using this file as a placeholder brainstorm and to-do list.
 # User Stories - To Do:
 
 - Add grid style to all pages (.content-wrapper)
-- Style dropdown nav just like fixed side nav
+    - Consider a flex alternative with more simple code.
 - Latest Standings/Seasons below Nav 
 - Right side interactive scroll menu of notable TSB players/records
 - JS Audio on record MouseClick: 1 "down", 2 "set", 3+ "hut"

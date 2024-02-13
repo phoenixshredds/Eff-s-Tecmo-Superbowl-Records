@@ -54,7 +54,9 @@
     "sidenav content-1 content-2 content-3"
     "sidenav content-4 content-5 content-6"
     "sidenav content-7 content-8 content-9"
-    "sidenav content-10 content-11 content-12";
+    "sidenav content-10 content-11 content-12"
+    "sidenav content-13 content-14 content-15"
+    "sidenav content-16 content-17 content-18";
 }
 
 .content-1 {
@@ -96,11 +98,37 @@
 .content-10 {
   grid-area: content-10;
 }
+
 .content-11 {
   grid-area: content-11;
 }
+
 .content-12 {
   grid-area: content-12;
+}
+
+.content-13 {
+  grid-area: content-13;
+}
+
+.content-14 {
+  grid-area: content-14;
+}
+
+.content-15 {
+  grid-area: content-15;
+}
+
+.content-16 {
+  grid-area: content-16;
+}
+
+.content-17 {
+  grid-area: content-17;
+}
+
+.content-18 {
+  grid-area: content-18;
 }
 
 /* Content block color scheme (football field) */
@@ -113,7 +141,15 @@
 .content-7,
 .content-8,
 .content-9,
-.content-10, .content-11, .content-12 {
+.content-10,
+.content-11,
+.content-12,
+.content-13,
+.content-14,
+.content-15,
+.content-16,
+.content-17,
+.content-18 {
   border: 3px solid var(--football-color);
   border-radius: 0.3rem;
   background-color: var(--grass-color);
@@ -150,7 +186,8 @@ tr:nth-of-type(odd) {
 }
 
 /* Table header and table data spacing */
-td, th {
+td,
+th {
   padding: 0.25em;
 }
 
@@ -158,7 +195,7 @@ td, th {
 .football-title {
   text-align: center;
   position: relative;
-  margin: 1rem auto;
+  margin: 2rem auto;
   color: var(--laces);
   background-color: var(--football-color);
   filter: drop-shadow(0.75rem -1.5rem 0.75rem var(--charcoal));
@@ -388,6 +425,12 @@ footer {
       "sidenav content-10"
       "sidenav content-11"
       "sidenav content-12"
+      "sidenav content-13"
+      "sidenav content-14"
+      "sidenav content-15"
+      "sidenav content-16"
+      "sidenav content-17"
+      "sidenav content-18"
   }
 
   .framed-bg {
@@ -410,6 +453,9 @@ footer {
       "sidenav content-7 content-8"
       "sidenav content-9 content-10"
       "sidenav content-11 content-12"
+      "sidenav content-13 content-14"
+      "sidenav content-15 content-16"
+      "sidenav content-17 content-18"
   }
 }
 
