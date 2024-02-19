@@ -19,8 +19,10 @@ As of now I am using this file as a to-do list.
 - Create a passer rating calculator with form inputs
     [x] Create Page
     [x] HTML/CSS Styles
-    - Fit into layout properly
+    - Fit into grid layout properly
     [x] Text area box
+    [x] User Stories
+    - Pseudo Code
     - Logic for NFL passer rating
     - Logic for TSB passer rating (if formula can be found)
         - Bonus: Create a "NFL/TSB" switch to change the logic.

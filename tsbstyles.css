@@ -174,7 +174,7 @@
   position: relative;
   transform: translate(-50%, -50%);
   width: 315px;
-  height: 600px;
+  height: 580px;
   background-color: var(--grass-color);
   margin: auto;
   padding: 0.5em
@@ -183,13 +183,14 @@
 /* Calculator screen display properties */
 .screen {
   width: 90%;
-  border-radius: 2rem;
+  border-radius: 0.3rem;
   font-size: 3rem;
   height: 1rem;
   border: none; 
   color: #fff;
-  text-align: center;
   padding: 1rem;  
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
 /* Calculator buttons */
