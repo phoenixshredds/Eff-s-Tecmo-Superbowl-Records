@@ -30,33 +30,30 @@
             <a href="09-player-bios-stats.html">Player Bios and Career Stats</a>
         </nav>
 
-        <div class="calculator content-1">
-            <input type="text" class="screen" disabled>
-            <div class="calc-keys">
-                <button class="operator" value="+">+</button>
-                <button class="operator" value="-">-</button>
-                <button class="operator" value="*">&#215</button>
-                <button class="operator" value="/">&#247</button>
+        <fieldset class="calculator content-1">
+            <h1 class="football-title">Passer Rating Calculator</h1>
 
-                <button value="7">7</button>
-                <button value="8">8</button>
-                <button value="9">9</button>
+            <label for="pass-att">Enter Passing Attempts:</label>
+            <input id="pass-att" type="number" class="screen" enabled>
 
-                <button value="4">4</button>
-                <button value="5">5</button>
-                <button value="6">6</button>
+            <label for="pass-comp">Enter Passing Completions:</label>
+            <input id="pass-comp" type="number" class="screen" enabled>
 
-                <button value="1">1</button>
-                <button value="2">2</button>
-                <button value="3">3</button>
+            <label for="pass-yds">Enter Passing Yards:</label>
+            <input id="pass-yds" type="number" class="screen" enabled>
 
-                <button value="0">0</button>
-                <button class="decimal" value=".">.</button>
-                <button class="all-clear" value="all-clear">AC</button>
+            <label for="pass-td">Enter Passing Touchdowns:</label>
+            <input id="pass-td" type="number" class="screen" enabled>
 
-                <button class="equal-sign operator" value="=">=</button>
-            </div>
-        </div>
+            <label for="pass-int">Enter Passing Interceptions:</label>
+            <input id="pass-int" type="number" class="screen" enabled>
+
+            <button type="submit" name="submit" class="submit" enabled>Submit</button>
+            <br><br>
+
+            <label for="result" name="result" type="text>">Passer Rating: </label>
+            <input id="result" name="result" type="text" class="screen" readonly>
+        </fieldset>
     </div>
 
 </body>

@@ -45,6 +45,7 @@
 .sidenav a:nth-of-type(n+2) {
   border-top: 0;
 }
+
 /* Container Grid Layout */
 .container {
   display: grid;
@@ -128,7 +129,7 @@
 
 .content-18 {
   grid-area: content-18;
-}
+} 
 
 /* Content block color scheme (football field) */
 .content-1,
@@ -167,14 +168,14 @@
 
 /* Calculator container styles */
 .calculator {
-  border: 7px solid var(--charcoal);
+  border: 5px solid var(--football-color);
   border-radius: 1rem;
   top: 50%;
   left: 50%;
   position: relative;
   transform: translate(-50%, -50%);
-  width: 315px;
-  height: 580px;
+  width: fit-content;
+  height: fit-content;
   background-color: var(--grass-color);
   margin: auto;
   padding: 0.5em
@@ -182,59 +183,37 @@
 
 /* Calculator screen display properties */
 .screen {
-  width: 90%;
+  width: 85%;
   border-radius: 0.3rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
   height: 1rem;
-  border: none; 
-  color: #fff;
+  color: var(--laces);
+  background: var(--transparent-bg);
   padding: 1rem;  
-  margin-top: 3rem;
-  margin-bottom: 1rem;
+  margin: 1rem;
 }
 
-/* Calculator buttons */
-button {
-  height: 60px;
-  border-radius: 20px;
-  border: 1px solid #c4c4c4;
-  background-color: rgba(0, 0, 0, 0.3);
-  font-size: 2rem;
-  color: #f8f8f8;
+.calculator>label {
+  font-weight: bold;
 }
 
-/* Calculator button hover color change */
-button:hover {
-  background-color: rgba(255, 255, 255, 0.4);
+.submit {
+  width: 10rem;
+  height: 3rem;
+  border: none;
+  border-radius: 1rem;
+  background: var(--football-color);
+  color: var(--laces);
+  font-weight: bold;
+  font-size: 1rem;
 }
 
-/* Calculator button click color change */
-button:active {
-  background-color: rgba(186, 186, 186, 0.4);
+.submit:hover {
+  border: 0.3rem groove var(--laces);
 }
 
-/* Calculator button all-clear color change */
-.all-clear:hover {
-  background-color: rgba(241, 115, 119, 0.4);
-}
-
-/* Calculator equal sign style */
-.equal-sign {
-  height: 100%;
-  grid-area: 2 / 4 / 6 / 5;
-}
-
-/* Calculator equal sign hover style */
-.equal-sign:hover {
-  background-color: rgba(78, 159, 212, 0.4);
-}
-
-/* Calculator keys grid layout style */
-.calc-keys {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
-  padding: 10px;
+.submit:active {
+  transform: translateY(2px);
 }
 
 /* Applies darker background color to every-other table row for improved readability (contrast) */
