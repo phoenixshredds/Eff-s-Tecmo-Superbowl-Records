@@ -216,6 +216,11 @@
   transform: translateY(2px);
 }
 
+#result {
+  background: none;
+  text-align: center;
+}
+
 /* Applies darker background color to every-other table row for improved readability (contrast) */
 tr:nth-of-type(odd) {
   background-color: var(--dark-grass);

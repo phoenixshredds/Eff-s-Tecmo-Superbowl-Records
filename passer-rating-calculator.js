@@ -1,17 +1,13 @@
-// Object Values
-jhuhju
+// Passer Rating Calculor: Formula takes 5 inputs: pass attempts, completions, yards, touchdowns and interceptions and spits out a single output.
+
+// Object Value
+
+// Handle Input
 
 
-// Update Display
+// Handle Submit Press
+if input fields not null
+    formulate passer rating
+        return number
 
-// Handle Key Press
-
-// Input Digit
-
-// Input Decimal
-
-// Handle Operators
-
-// Calculator Logic
-
-// Reset Calculator
+// Calculator Formula Logic
