@@ -11,13 +11,6 @@
   --laces: #faf8f3;
 }
 
-/* Global font settings */
-@font-face {
-  font-family: "Nova Square", serif;
-  src: local("NovaSquare-Regular"), local("Nova Square"), format("truetype"), format("ttf");
-  font-size: 16px;
-}
-
 /* Side navigation menu */
 .sidenav {
   /*border: 2px solid var(--charcoal);*/
@@ -43,7 +36,7 @@
 }
 
 .sidenav a:nth-of-type(n+2) {
-  border-top: 0; 
+  border-top: 0;
 }
 
 /* Container Grid Layout */
@@ -129,7 +122,7 @@
 
 .content-18 {
   grid-area: content-18;
-} 
+}
 
 /* Content block color scheme (football field) */
 .content-1,
@@ -190,7 +183,7 @@
   height: 1rem;
   color: var(--laces);
   background: var(--transparent-bg);
-  padding: 1rem;  
+  padding: 1rem;
   margin: 1rem;
 }
 
