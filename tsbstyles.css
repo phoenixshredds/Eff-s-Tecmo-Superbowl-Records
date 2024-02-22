@@ -13,7 +13,7 @@
 
 /* Global font settings */
 @font-face {
-  font-family: "Nova Square";
+  font-family: "Nova Square", serif;
   src: local("NovaSquare-Regular"), local("Nova Square"), format("truetype"), format("ttf");
   font-size: 16px;
 }
@@ -43,7 +43,7 @@
 }
 
 .sidenav a:nth-of-type(n+2) {
-  border-top: 0;
+  border-top: 0; 
 }
 
 /* Container Grid Layout */

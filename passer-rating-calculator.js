@@ -15,7 +15,7 @@ if input fields not null
         return number
 */
 
-// Formula Variables
+// Formula Variables 
 
 const a = (passComp / passAtt - 0.3) * 5;
 const b = (passYds / passAtt - 3) * 5;
