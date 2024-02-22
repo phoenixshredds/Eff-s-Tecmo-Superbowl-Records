@@ -30,30 +30,32 @@
             <a href="09-player-bios-stats.html">Player Bios and Career Stats</a>
         </nav>
 
-        <fieldset class="calculator content-1">
-            <h1 class="football-title">Passer Rating Calculator</h1>
+        <form id="passer-rating-form" class="calculator">
+            <fieldset>
+                <h1 class="football-title">Passer Rating Calculator</h1>
 
-            <label for="pass-att">Enter Passing Attempts:</label>
-            <input id="pass-att" type="number" class="screen" enabled required>
+                <label for="pass-att">Enter Passing Attempts:</label>
+                <input id="pass-att" type="number" class="screen" enabled required>
 
-            <label for="pass-comp">Enter Passing Completions:</label>
-            <input id="pass-comp" type="number" class="screen" enabled required>
+                <label for="pass-comp">Enter Passing Completions:</label>
+                <input id="pass-comp" type="number" class="screen" enabled required>
 
-            <label for="pass-yds">Enter Passing Yards:</label>
-            <input id="pass-yds" type="number" class="screen" enabled required>
+                <label for="pass-yds">Enter Passing Yards:</label>
+                <input id="pass-yds" type="number" class="screen" enabled required>
 
-            <label for="pass-td">Enter Passing Touchdowns:</label>
-            <input id="pass-td" type="number" class="screen" enabled required>
+                <label for="pass-td">Enter Passing Touchdowns:</label>
+                <input id="pass-td" type="number" class="screen" enabled required>
 
-            <label for="pass-int">Enter Passing Interceptions:</label>
-            <input id="pass-int" type="number" class="screen" enabled required>
+                <label for="pass-int">Enter Passing Interceptions:</label>
+                <input id="pass-int" type="number" class="screen" enabled required>
 
-            <button type="submit" name="submit" class="submit" enabled required>Submit</button>
-            <br><br>
+                <button type="submit" name="submit" class="submit" enabled required>Submit</button>
+                <br><br>
 
-            <label for="result" name="result" type="text>">Passer Rating: </label>
-            <input id="result" name="result" type="text" class="screen" readonly>
-        </fieldset>
+                <label for="result" name="result" type="text>">Passer Rating: </label>
+                <input id="result" name="result" type="text" class="screen" readonly>
+            </fieldset>
+        </form>
     </div>
 
 </body>
