@@ -1,45 +1,33 @@
-// Passer Rating Calculor: Formula takes 5 inputs: pass attempts, completions, yards, touchdowns and interceptions and spits out a single output.
+// Passer Rating Calculator: Formula takes 5 inputs: pass attempts, completions, yards, touchdowns and interceptions and spits out a single output.
 
-const passAtt = document.getElementById('#pass-att');
-const passComp = document.getElementById('#pass-comp');
-const passYds = document.getElementById('#pass-yds');
-const passTd = document.getElementById('#pass-td');
-const passInt = document.getElementById('#pass-int');
+document.getElementById('passer-rating-form').addEventListener('submit', (event) => {
+    event.preventDefault();
 
+    const passAttValue = parseFloat(document.getElementById('pass-att').value);
+    const passCompValue = parseFloat(document.getElementById('pass-comp').value);
+    const passYdsValue = parseFloat(document.getElementById('pass-yds').value);
+    const passTdValue = parseFloat(document.getElementById('pass-td').value);
+    const passIntValue = parseFloat(document.getElementById('pass-int').value);
 
-// Handle Submit Press
+    const calculationA = Math.min(Math.max((passCompValue / passAttValue - 0.3) * 5, 0), 2.375);
+    const calculationB = Math.min(Math.max((passYdsValue / passAttValue - 3) * 5, 0), 2.375);
+    const calculationC = Math.min(Math.max((passTdValue / passAttValue) * 20, 0), 2.375);
+    const calculationD = Math.min(Math.max(2.375 - (passIntValue / passAttValue * 25), 0), 2.375);
 
-/* 
-if input fields not null
-    formulate passer rating
-        return number
-*/
+    const passerRating = (calculationA + calculationB + calculationC + calculationD) / 6 * 100;
 
-// Formula Variables 
+    document.getElementById('result').value = passerRating.toFixed(1);
+    console.log(passAttValue, passCompValue, passIntValue, passTdValue, passYdsValue, passerRating);
 
-const a = (passComp / passAtt - 0.3) * 5;
-const b = (passYds / passAtt - 3) * 5;
-const c = (passTd / passAtt) * 20;
-const d = 2.375 - (passInt / passAtt * 25);
+    if (passCompValue > passAttValue) {
+        alert('Passing completions cannot exceed passing attempts. Please try again.');
+        return;
+    } else if (passTdValue + passIntValue > passAttValue) {
+        alert('Passing touchdowns and/or interceptions cannot exceed passing attempts. Please try again.');
+        return;
+    } else if (passAttValue < 0 || passCompValue < 0 || passYdsValue < 0 || passTdValue < 0 || passIntValue < 0) {
+        alert('Invalid input: Number cannot be negative. Please try again.');
+        return;
+    };  
+});
 
-/*
-
-a = (comp / att - 0.3) X 5
-b = (yds / att - 3) x 0.25
-c = (td / att) x 20
-d = 2.375 - (int / att x 25)
-
-If the result of any calculation is greater than 2.375, it is set to 2.375. If the result is negative it is set to zero.
-
-*/
-
-// Passer Rating Formula
-
-const passRate = (a + b + c + d / 6) * 100;
-
-/*
-The above calculations are then used to complete passer rating:
-
-Passer Rating = (a + b + c + d / 6) x 100
-
-*/
