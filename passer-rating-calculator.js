@@ -38,7 +38,9 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (passAttValue < 0 || passCompValue < 0 || passTdValue < 0 || passIntValue < 0) {
             alert('Invalid input: Number cannot be negative. Please try again.');
             return;
-        }; document.getElementById('result').value = passerRating.toFixed(2);
+        };
+        
+        document.getElementById('result').value = passerRating.toFixed(2);
     });
 });
 
