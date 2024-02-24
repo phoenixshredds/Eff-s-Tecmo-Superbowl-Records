@@ -169,6 +169,7 @@
   margin: 2rem;
   padding: 0.3em;
   color: var(--laces);
+  text-align: center;
 }
 
 .calculator>fieldset {
@@ -267,13 +268,15 @@ th {
 .key-header {
   font-weight: bold;
   font-size: 1.75rem;
+  padding: 1rem;
 }
 
 /* Key content text settings */
 .key {
   font-weight: normal;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   text-align: left;
+  padding: 1rem;
 }
 
 /* Creates a semi-transparent background with a framed border */
