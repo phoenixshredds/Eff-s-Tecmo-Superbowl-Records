@@ -17,9 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const passerRating = (calculationA + calculationB + calculationC + calculationD) / 6 * 100;
 
-        document.getElementById('result').value = passerRating.toFixed(2);
-
         let passTdandIntSum = passTdValue + passIntValue;
+        let passIncompletions = passAttValue - passCompValue;
 
         if (passCompValue > passAttValue) {
             alert('Passing completions cannot exceed passing attempts. Please try again.');
@@ -33,10 +32,13 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (passTdandIntSum > passAttValue) {
             alert('Passing attempts cannot exceed touchdowns and/or interceptions. Please try again.');
             return;
+        } else if (passIncompletions < passIntValue) {
+            alert('Passing interceptions cannot exceed incompletions. Please try again.');
+            return;
         } else if (passAttValue < 0 || passCompValue < 0 || passTdValue < 0 || passIntValue < 0) {
             alert('Invalid input: Number cannot be negative. Please try again.');
             return;
-        };
+        }; document.getElementById('result').value = passerRating.toFixed(2);
     });
 });
 
