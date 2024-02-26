@@ -282,13 +282,13 @@ th {
 /* Creates a semi-transparent background with a framed border */
 .framed-bg {
   text-align: center;
-  justify-content: center;
   background-color: var(--transparent-bg);
   color: var(--charcoal);
   border-radius: 0.75em;
   border: 0.5rem ridge var(--transparent-brown);
   width: 36rem;
   margin: 2rem auto;
+  height: fit-content;
 }
 
 /* Introduction text settings */
