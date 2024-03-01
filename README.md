@@ -5,16 +5,19 @@ As of now I am using this file as a to[]do list.
 
 # User Stories - To Do:
 
-# HTML & CSS:
-
 [] Design laces & seams for football header
-[] Div background like a football field (white text and yard lines)
-[] Create class for team logo colors: border ridge with primary and seconary team colors, make each team's color a var([][]variable[]name).
-[] Latest Standings/Seasons below Nav 
-[] Embedded highlight clips of TSB gameplay
-[] Consider a flex alternative to grid with more simple code.
 
-# Javascript:
+[] Div background like a football field (white text and yard lines)
+
+[] Create class for team logo colors: border ridge with primary and seconary team colors, make each team's color a var([][]variable[]name).
+
+[] Latest Standings/Seasons below Nav 
+
+[] Embedded highlight clips of TSB gameplay
+
+[] Global search function with filters for teams, players, conferences, seasons, generations etc
+
+[] Consider a flex alternative to grid with more simple code.
 
 [x] Create a passer rating calculator with form inputs
     [x] Create Page
