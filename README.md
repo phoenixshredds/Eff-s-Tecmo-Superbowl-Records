@@ -1,15 +1,23 @@
 # Eff's Tecmo Superbowl Records
  My Tecmo Superbowl Records Website
 
-As of now I am using this file as a to[]do list. Documentation to follow.
+As of now I am using this file as a to-do list. Documentation to follow.
 
 # User Stories - To Do:
 
+Code quality:
+    [] Validate HTML and adjust accordingly (Pages Done: [...])
+    [] Utilize AI to refactor CSS (Pages Done: [...])
+    [] Utilize AI to refactor JS (Pages Done: [...])
+    [] Have a mentor provide feedback
+
+[] Navigation: Condense individual and team records into dropdown menus.
+    [] Style the dropdowns to match
+
 [] Design laces & seams for football header
 
-[] Div background like a football field (white text and yard lines)
-
-[] Create class for team logo colors: border ridge with primary and seconary team colors, make each team's color a var([][]variable[]name).
+[] Create class for team logo colors: border ridge with primary team colors, make each team's color a var([][]variable[]name).
+    [] Add to all records (Pages Done: [...])
 
 [x] Latest Standings/Seasons below Nav 
 
@@ -31,7 +39,7 @@ As of now I am using this file as a to[]do list. Documentation to follow.
 
 [] Right side interactive scroll menu of notable TSB players/records
 
-x[] Soundboard page with soundboard player
+[x] Soundboard page with soundboard player
     [] HTML structure with buttons, types and IDs for each sound
     [] CSS classes and styling
     [] JS for audio interactivity
@@ -60,3 +68,10 @@ ____________________________________________________
 BUGS/IMPROVEMENTS/KINKS TO FIX:
 [] Create a max[]width media query to prevent over[]stretching on ultrawide or having nav too far left (AND/OR) convert side nav to a column that floats left.
 [] Default zoom is too close on mobile. Find a fix to either adjust the scale or zoom out the display. Alternatively, make side nav display at the top so its all one column. Update: Changing all pixels to em/percentages, will use media queries to make a single column view for mobile.
+____________________________________________________
+
+# DOCUMENTATION
+
+This website is designed to keep track of Tecmo Superbowl records from the seasons played by Eff, Att, and Rew. 
+
+The style is inspired by old newspapers with a football color scheme. It is a responsive grid design (via @media queries) with a side navigation menu.
