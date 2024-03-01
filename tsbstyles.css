@@ -26,7 +26,7 @@
 }
 
 /* Side navigation link styling */
-.sidenav a {
+.sidenav a, .standings {
   display: block;
   border: .1em solid var(--charcoal);
   border-radius: .25em;
@@ -340,7 +340,7 @@ li {
 }
 
 /* Highlights list elements with cursor hover. Style like football field (dark green bg, var(--laces) text) */
-li:hover {
+li:hover, .standings:hover {
   background-color: var(--dark-grass);
   color: var(--laces);
   border-radius: 0.2rem;

@@ -1,7 +1,7 @@
 # Eff's Tecmo Superbowl Records
  My Tecmo Superbowl Records Website
 
-As of now I am using this file as a to[]do list. 
+As of now I am using this file as a to[]do list. Documentation to follow.
 
 # User Stories - To Do:
 
@@ -11,7 +11,7 @@ As of now I am using this file as a to[]do list.
 
 [] Create class for team logo colors: border ridge with primary and seconary team colors, make each team's color a var([][]variable[]name).
 
-[] Latest Standings/Seasons below Nav 
+[x] Latest Standings/Seasons below Nav 
 
 [] Embedded highlight clips of TSB gameplay
 
@@ -31,10 +31,10 @@ As of now I am using this file as a to[]do list.
 
 [] Right side interactive scroll menu of notable TSB players/records
 
-[] Soundboard page with soundboard player
+x[] Soundboard page with soundboard player
     [] HTML structure with buttons, types and IDs for each sound
     [] CSS classes and styling
-    [] 
+    [] JS for audio interactivity
 
 [] JS Audio on record MouseClick: 1 "down", 2 "set", 3+ "hut"
     [] Use proper soundboard for record ("touchdown" "interception" "first down" "sack.")
