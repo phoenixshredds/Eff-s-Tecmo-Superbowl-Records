@@ -17,7 +17,7 @@
 }
 
 /* Side navigation menu */
-.sidenav, .nav-button {
+.sidenav {
   z-index: 1;
   font-weight: bold;
   text-align: center;
@@ -40,9 +40,9 @@
 
 .nav-button {
   width: 100%;
-  font-size: 1em;
   text-decoration: underline;
   border-top: 0;
+  font: inherit;
 }
 
 .dropdown-options {
