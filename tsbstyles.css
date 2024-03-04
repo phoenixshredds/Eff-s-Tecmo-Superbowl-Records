@@ -11,22 +11,21 @@
   --laces: #faf8f3;
 }
 
+/* Tecmo Superbowl logo spacing and sizing */
+#tsb-cover {
+  padding: 1rem;
+}
+
 /* Side navigation menu */
-.sidenav {
-  /*border: 2px solid var(--charcoal);*/
+.sidenav, .nav-button {
   z-index: 1;
   font-weight: bold;
   text-align: center;
   grid-area: sidenav;
 }
 
-/* Tecmo Superbowl logo spacing and sizing */
-#tsb-cover {
-  padding: 1rem;
-}
-
 /* Side navigation link styling */
-.sidenav a, .standings {
+.sidenav a, .standings, .nav-button {
   display: block;
   border: .1em solid var(--charcoal);
   border-radius: .25em;
@@ -37,6 +36,86 @@
 
 .sidenav a:nth-of-type(n+2) {
   border-top: 0;
+}
+
+.nav-button {
+  width: 100%;
+  font-size: 1em;
+  text-decoration: underline;
+  border-top: 0;
+}
+
+.dropdown-options {
+  display: none;
+  position: absolute;
+  overflow: auto;
+  background-color: var(--background-color);
+}
+
+.dropdown:hover .dropdown-options {
+  display: block;
+  margin: -2.5rem 0 0 10rem;
+  border-radius: 0.5em;
+}
+
+/* Cursor hover effect for navigation and footer links. Styled with football color scheme.  */
+footer a:hover,
+.sidenav a:hover, .nav-button:hover {
+  color: var(--laces);
+  background-color: var(--football-color);
+  border-radius: 0.5em;
+  border-color: var(--charcoal);
+  filter: drop-shadow(1.1rem -1.1rem 1.1rem var(--charcoal));
+}
+
+/* Football-shaped header */
+.football-title {
+  text-align: center;
+  position: relative;
+  margin: 2rem auto;
+  color: var(--laces);
+  background-color: var(--football-color);
+  filter: drop-shadow(0.75rem -1.5rem 0.75rem var(--charcoal));
+  border-radius: 47%;
+  padding: 3.125rem;
+  max-width: 24.375rem;
+  max-height: 11rem;
+  font-family: "Nova Square", serif;
+  font-weight: normal;
+  font-size: 1.75em;
+  z-index: 0;
+}
+
+/* Football sub-title styling. Note: Sub-title is differentiated from header by being used within the main content blocks rather than at the top of the page. */
+.football-subtitle {
+  font-size: 1.35rem;
+}
+
+/* Key header text settings */
+.key-header {
+  font-weight: bold;
+  font-size: 1.75rem;
+  padding: 1rem;
+}
+
+/* Key content text settings */
+.key {
+  font-weight: normal;
+  font-size: 1.2rem;
+  text-align: left;
+  padding: 1rem;
+}
+
+/* Creates a semi-transparent background with a framed border */
+.framed-bg {
+  text-align: center;
+  background-color: var(--transparent-bg);
+  color: var(--charcoal);
+  border-radius: 0.75em;
+  border: 0.5rem ridge var(--transparent-brown);
+  width: 36rem;
+  margin: 2rem auto;
+  height: fit-content;
 }
 
 /* Container Grid Layout */
@@ -241,70 +320,11 @@ th {
   padding: 0.25em;
 }
 
-/* Football-shaped header */
-.football-title {
-  text-align: center;
-  position: relative;
-  margin: 2rem auto;
-  color: var(--laces);
-  background-color: var(--football-color);
-  filter: drop-shadow(0.75rem -1.5rem 0.75rem var(--charcoal));
-  border-radius: 47%;
-  padding: 3.125rem;
-  max-width: 24.375rem;
-  max-height: 11rem;
-  font-family: "Nova Square", serif;
-  font-weight: normal;
-  font-size: 1.75em;
-  z-index: 1;
-}
-
-/* Football sub-title styling. Note: Sub-title is differentiated from header by being used within the main content blocks rather than at the top of the page. */
-.football-subtitle {
-  font-size: 1.35rem;
-}
-
-/* Key header text settings */
-.key-header {
-  font-weight: bold;
-  font-size: 1.75rem;
-  padding: 1rem;
-}
-
-/* Key content text settings */
-.key {
-  font-weight: normal;
-  font-size: 1.2rem;
-  text-align: left;
-  padding: 1rem;
-}
-
-/* Creates a semi-transparent background with a framed border */
-.framed-bg {
-  text-align: center;
-  background-color: var(--transparent-bg);
-  color: var(--charcoal);
-  border-radius: 0.75em;
-  border: 0.5rem ridge var(--transparent-brown);
-  width: 36rem;
-  margin: 2rem auto;
-  height: fit-content;
-}
-
 /* Introduction text settings */
 .intro {
   text-align: center;
   font-size: 1.75rem;
   font-family: "Nova Square", serif;
-}
-
-/* Cursor hover effect for navigation and footer links. Styled with football color scheme.  */
-footer a:hover,
-.sidenav a:hover {
-  color: var(--laces);
-  background-color: var(--football-color);
-  border-radius: 0.3em;
-  filter: drop-shadow(1.1rem -1.1rem 1.1rem var(--charcoal));
 }
 
 /* Global styling settings for content and background. */
