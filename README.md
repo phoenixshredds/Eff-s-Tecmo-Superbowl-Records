@@ -11,8 +11,8 @@ Code quality:
     [] Utilize AI to refactor JS (Pages Done: [...])
     [] Have a mentor provide feedback
 
-[] Navigation: Condense individual and team records into dropdown menus.
-    [] Style the dropdowns to match
+[x] Navigation: Condense individual and team records into dropdown menus.
+    [x] Style the dropdowns to match
 
 [] Design laces & seams for football header
 
