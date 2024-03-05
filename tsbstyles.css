@@ -300,17 +300,20 @@ tr:nth-of-type(odd) {
   background-color: var(--dark-grass);
 }
 
+/* Table wrapper */
+.wall-of-fame {
+  font-size: 0.7em;
+}
+
 /* Styles table caption */
 .table-caption {
-  padding: 1em;
-  font-size: 1.75em;
-  font-family: "Nova Square", serif;
-  font-weight: normal;
+  font-size: 2.25em;
+  padding: 1.6em;
 }
 
 /* Styles row header */
 .row-0 {
-  font-size: 1.3em;
+  font-size: 1.5em;
   font-style: italic;
 }
 
@@ -318,6 +321,7 @@ tr:nth-of-type(odd) {
 td,
 th {
   padding: 0.25em;
+  text-align: center;
 }
 
 /* Introduction text settings */
@@ -478,12 +482,12 @@ footer {
 }
 
 /* Converts tablet screens to a double column */
-@media screen and (min-width: 39em) and (max-width: 64em) {
+@media screen and (min-width: 39.01em) and (max-width: 64em) {
 
   /* Container Grid Layout */
   .container {
     display: grid;
-    grid-template-columns: .5fr 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-auto-rows: min-content;
     grid-template-areas:
       "sidenav content-1"
@@ -512,7 +516,7 @@ footer {
 }
 
 /* Converts 4:3 screens to a triple column */
-@media screen and (min-width: 64em) and (max-width: 92em) {
+@media screen and (min-width: 64.01em) and (max-width: 92em) {
 
   /* Container Grid Layout */
   .container {
