@@ -25,8 +25,6 @@ Code quality:
 
 [] Global search function with filters for teams, players, conferences, seasons, generations etc
 
-[] Consider a flex alternative to grid with more simple code.
-
 [x] Create a passer rating calculator with form inputs
     [x] Create Page
     [x] HTML/CSS Styles
@@ -64,10 +62,6 @@ Code quality:
     [] Custom ROM page to share rom downloads
     [] Online League Page (Original roster, latest rosters and original roster redrafts)
 
-____________________________________________________
-BUGS/IMPROVEMENTS/KINKS TO FIX:
-[x] Create a max[]width media query to prevent over[]stretching on ultrawide or having nav too far left (AND/OR) convert side nav to a column that floats left.
-[] Default zoom is too close on mobile. Find a fix to either adjust the scale or zoom out the display. Alternatively, make side nav display at the top so its all one column. Update: Changing all pixels to em/percentages, will use media queries to make a single column view for mobile.
 ____________________________________________________
 
 # DOCUMENTATION
