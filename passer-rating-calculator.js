@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Passing interceptions cannot exceed passing attempts. Please try again.');
             return;
         } else if (passTdandIntSum > passAttValue) {
-            alert('Passing attempts cannot exceed touchdowns and/or interceptions. Please try again.');
+            alert('The sum of touchdowns plus interceptions cannot exceed passing attempts. Please try again.');
             return;
         } else if (passIncompletions < passIntValue) {
             alert('Passing interceptions cannot exceed incompletions. Please try again.');

@@ -43,7 +43,7 @@ Code quality:
 [] Right side interactive scroll menu of notable TSB players/records
 
 [] Improving Calculator
-    [] Refactor if/else to ternary OR refactor otherwise
+    [] Refactor if/else to array of objects (objects being the conditions)
     [x] Debug the alerts displaying twice
 
 [x] Soundboard page with soundboard player
