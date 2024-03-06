@@ -45,6 +45,7 @@ Code quality:
 [] Improving Calculator
     [] Refactor if/else to array of objects (objects being the conditions)
     [x] Debug the alerts displaying twice
+    [x] Fix an incorrect error message
 
 [x] Soundboard page with soundboard player
     [] HTML structure with buttons, types and IDs for each sound
