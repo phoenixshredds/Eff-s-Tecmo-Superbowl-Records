@@ -14,6 +14,11 @@ Code quality:
 [x] Navigation: Condense individual and team records into dropdown menus.
     [x] Style the dropdowns to match
 
+[] Add transition effects:
+    [] Dropdown menu opacity/x axis
+    [] Record card opacity/x axis
+    [] TSB cover "pick up" effect: rotate clockwise and increase size, ease-in-out.
+
 [] Design laces & seams for football header
 
 [] Create class for team logo colors: border ridge with primary team colors, make each team's color a var([][]variable[]name).
@@ -36,6 +41,10 @@ Code quality:
         [] Bonus: Create a "NFL/TSB" switch to change the logic.
 
 [] Right side interactive scroll menu of notable TSB players/records
+
+[] Improving Calculator
+    [] Refactor if/else to ternary OR refactor otherwise
+    [x] Debug the alerts displaying twice
 
 [x] Soundboard page with soundboard player
     [] HTML structure with buttons, types and IDs for each sound
