@@ -381,32 +381,27 @@ tr:hover {
   cursor: pointer;
 }
 
-/* Displays profile image of player or team when cursor hovers over a record list element. */
-.hover-img a:hover span {
-  display: block;
-  visibility: visible;
-  height: 0px;
+/* Styles the hover image */
+.hover-img img {
+  border-radius: 0.75rem;
+  filter: drop-shadow(1.5rem -1.75rem 00.75rem #000);
+  width: 100%;
+  margin: auto;
+  color: #000;
+  font-weight: bold;
+  border: 0.4rem solid var(--football-color);
+  z-index: 2;
 }
 
 /* Hides the profile image from display */
 .hover-img a span {
   display: none;
-  visibility: hidden;
-  height: auto;
 }
 
-/* Styles the hover image */
-.hover-img img {
-  position: relative;
-  border-radius: 0.75rem;
-  filter: drop-shadow(1.5rem -1.75rem 00.75rem #000);
-  width: 100%;
-  margin-top: 1.5rem;
-  color: #000;
-  font-weight: bold;
-  border: 0.4rem solid var(--football-color);
-  z-index: 2;
-  transition: margin-top 2s ease-in-out;
+/* Displays profile image of player or team when cursor hovers over a record list element. */
+.hover-img a:hover span {
+  display: block;
+  height: 0px;
 }
 
 /* Adjusts the size of logos */
