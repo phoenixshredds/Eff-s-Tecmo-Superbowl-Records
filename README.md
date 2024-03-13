@@ -6,7 +6,7 @@ As of now I am using this file as a to-do list. Documentation to follow.
 # User Stories - To Do:
 
 Code quality:
-    [] Validate HTML and adjust accordingly (Pages Done: [...])
+    [] Validate HTML and adjust accordingly (Pages Done: [x]index, [])
     [] Utilize AI to refactor CSS (Pages Done: [...])
     [] Utilize AI to refactor JS (Pages Done: [...])
     [] Have a mentor provide feedback

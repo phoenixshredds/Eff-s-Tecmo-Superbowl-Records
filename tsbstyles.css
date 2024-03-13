@@ -431,14 +431,18 @@ li>a {
 
 /* Positions the meter */
 .meter {
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
   border: 0;
-  margin-left: 20%;
+  margin: auto;
+  padding: 0.5rem;
+  width: 25rem;
 }
 
 /* Scales the meter size */
 meter {
-  width: 30%;
+  width: 40%;
 }
 
 /* Positions and scales the footer */
@@ -446,6 +450,7 @@ footer {
   width: 50vw;
   margin: auto;
   padding: 1rem;
+  font-style: italic;
 }
 
 /* Converts mobile screens to a single column */
