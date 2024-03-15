@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Individual Defensive and Special Teams Records</title>
-    <link href="tsbstyles.css" rel="stylesheet" type="text/css" />
+    <link href="tsbstyles.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
@@ -17,18 +17,18 @@
         <p>Key:</p>
         <ul class="key">
             <li><i>* symbol indicates manual count above in-game cap of 63 touchdowns.
-            <li>+ symbol indicates capped in-game yardage. </i></li>
+            <li>+ symbol indicates capped in-game yardage.</i></li>
         </ul>
     </div>
 
     <div class="container">
         <nav class="sidenav">
             <img src="Tecmo_Super_Bowl.jpg" id="tsb-cover"
-                alt="The cover of the original Tecmo Superbowl video game with a football player wearing a New York Giants helmet." />
+                alt="The cover of the original Tecmo Superbowl video game with a football player wearing a New York Giants helmet.">
 
             <a href="index.html">Home</a>
 
-            <div class="dropdown" id="individual-records" name="individual-records">
+            <div class="dropdown" id="individual-records">
                 <button class="nav-button">Individual Records</button>
                 <div class="dropdown-options">
                     <a href="02-passing-records.html">Passing
@@ -39,7 +39,7 @@
                 </div>
             </div>
 
-            <div class="dropdown" id="team-records" name="team-records">
+            <div class="dropdown" id="team-records">
                 <button class="nav-button">Team Records</button>
                 <div class="dropdown-options">
                     <a href="06-single-season-team-records.html">Single Season Team Records</a>
@@ -52,15 +52,15 @@
             <a href="10-passer-rating-calculator.html">Passer Rating Calculator</a>
             <a href="11-gameplay-soundboard.html">Gameplay Soundboard</a>
 
-            <div id="standings">
+            <div id="latest-standings">
                 <h5 class="football-title football-subtitle">Latest Season Standings:</h5>
-                <p class="standings">Eff's Phoenix Cardinals (Gen IV) 2-0</p>
-                <p class="standings">Eff's Minnesota Vikings (Gen I '93) 15-0</p>
+                <p class="standings" id="eff-latest-season"></p>
+                <p class="standings" id="eff-latest-season-93"></p>
             </div>
 
-            <div id="standings">
+            <div id="previous-standings">
                 <h6 class="football-title football-subtitle">Previous Season:</h6>
-                <p class="standings">Eff's Philadelphia Eagles (Gen IV) 16-0, Superbowl Champions</p>
+                <p class="standings" id="eff-previous-season"></p>
             </div>
         </nav>
 
@@ -68,89 +68,86 @@
             <p class="record-header">Most Interceptions:</p>
             <p>18 interceptions:
                 <li class="hover-img"><a href="#">Gill Byrd(cpu)<span><img src="Gill-Byrd.png"
-                                alt="Gill Byrd profile" />
+                                alt="Gill Byrd profile">
                 </li></span></a>
                 <li class="hover-img"><a href="#">Dave Waymer(cpu)<span><img src="Dave-Waymer.png"
-                                alt="Dave Waymer profile" />
+                                alt="Dave Waymer profile">
                 </li></span></a>
             </p>
-        </div><br>
+        </div>
         <div class="content-2">
             <p class="record-header">Most Interception Yards:</p>
             <li class="hover-img"><a href="#">352 yards, Dave Waymer(cpu)<span><img src="Waymer-INTS.png"
-                            alt="Profile picture of Dave Waymer interception yards record" /></li></span></a>
-        </div><br>
+                            alt="Profile picture of Dave Waymer interception yards record"></li></span></a>
+        </div>
         <div class="content-3">
             <p class="record-header">Most Interception Touchdowns:</p>
             <li class="hover-img"><a href="#">4 touchdowns, Dave Waymer(cpu)<span><img src="Waymer-INTS.png"
-                            alt="Profile picture of Dave Waymer interception touchdown record" /></li></span></a>
-        </div><br>
+                            alt="Profile picture of Dave Waymer interception touchdown record"></li></span></a>
+        </div>
         <div class="content-4">
             <p class="record-header">Most Sacks:</p>
             <li class="hover-img"><a href="#">98 sacks, Mike Singletary(Att)<span><img src="Mike-Singletary.png"
-                            alt="Sacks record player picture" /></li></span></a>
-        </div><br>
+                            alt="Sacks record player picture"></li></span></a>
+        </div>
         <div class="content-5">
             <p class="record-header">Highest Kick Return Average:</p>
             <li class="hover-img"><a href="#">36.4 yards per return, Craig Heyward(Eff)<span><img
-                            src="Craig-Heyward.png" alt="Craig Heyward profile" /></li></span></a>
-        </div><br>
+                            src="Craig-Heyward.png" alt="Craig Heyward profile"></li></span></a>
+        </div>
         <div class="content-6">
             <p class="record-header">Most Kick Return Yards:</p>
             <li>1824 yards, G. Green(cpu)
             </li>
-        </div><br>
+        </div>
         <div class="content-7">
             <p class="record-header">Most Kick Return Touchdowns:</p>
             <li class="hover-img"><a href="#">9 touchdowns, Craig Heyward(eff)<span><img src="Craig-Heyward.png"
-                            alt="Craig Heyward profile" /></li></span></a>
-        </div><br>
+                            alt="Craig Heyward profile"></li></span></a>
+        </div>
         <div class="content-8">
             <p class="record-header">Highest Punt Return Average:</p>
             <li class="hover-img"><a href="#">23.1 yards per return, Craig Heyward(Eff)<span><img
-                            src="Craig-Heyward.png" alt="Craig Heyward profile" /></li></span></a>
-        </div><br>
+                            src="Craig-Heyward.png" alt="Craig Heyward profile"></li></span></a>
+        </div>
         <div class="content-9">
             <p class="record-header">Most Punt Return Yards:</p>
             <li class="hover-img"><a href="#">625 yards, John Taylor(Eff)<span><img src="John-Taylor.png"
-                            alt="John Taylor profile" /></li></span></a>
-        </div><br>
+                            alt="John Taylor profile"></li></span></a>
+        </div>
         <div class="content-10">
             <p class="record-header">Total Punt Returns:</p>
             <li class="hover-img"><a href="#">38 returns, John Taylor(Eff)<span><img src="John-Taylor.png"
-                            alt="John Taylor profile" /></li></span></a>
-        </div><br>
+                            alt="John Taylor profile"></li></span></a>
+        </div>
         <div class="content-11">
             <p class="record-header">Most Punt Return Touchdowns:</p>
             <li class="hover-img"><a href="#">3 touchdowns, Craig Heyward(Eff)<span><img src="Craig-Heyward.png"
-                            alt="Craig Heyward profile" /></li></span></a>
-        </div><br>
+                            alt="Craig Heyward profile"></li></span></a>
+        </div>
         <div class="content-12">
             <p class="record-header">Most Total Return Touchdowns (KR/PR):</p>
             <li class="hover-img"><a href="#">12 touchdowns, Craig Heyward(Eff)<span><img src="Craig-Heyward.png"
-                            alt="Craig Heyward profile" /></li></span></a>
-        </div><br>
+                            alt="Craig Heyward profile"></li></span></a>
+        </div>
         <div class="content-13">
             <p class="record-header">Most Extra Points:</p>
             <li>124 extra points, R. Ruzek(Eff)</li>
-        </div><br>
+        </div>
         <div class="content-14">
             <p class="record-header">Most Field Goals Made:</p>
             <li>22 field goals, N. Lowery, C. Jacke, K. Butler(cpu)</li>
             </ul>
-        </div><br>
+        </div>
         <div class="content-15">
             <p class="record-header">Highest Punt Average:</p>
             <li>80.0 yards per punt, R. Roby, M. Horan(Eff)</li>
-        </div><br>
+        </div>
     </div>
-</body>
-<footer class="framed-bg">
-    <i>
-        <p>&copyCopyright Jeffrey Hill, 2023.</p>
+    <footer class="framed-bg">
+        <p>&copy;Copyright Jeffrey Hill, 2024</p>
         E-mail: <a href="mailto:phoenixshredds@yahoo.com">phoenixshredds@yahoo.com</a>
-    </i>
-</footer>
-<br><br>
-
+    </footer>
+    <script src="script.js"></script>
+</body>
 </html>

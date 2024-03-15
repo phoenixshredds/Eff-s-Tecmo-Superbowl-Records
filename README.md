@@ -6,10 +6,13 @@ As of now I am using this file as a to-do list. Documentation to follow.
 # User Stories - To Do:
 
 Code quality:
-    [] Validate HTML and adjust accordingly (Pages Done: [x]index, [])
+    [*] Validate HTML and adjust accordingly 
+        Pages Done: [x]index. Improved: [*]all others
     [] Utilize AI to refactor CSS (Pages Done: [...])
     [] Utilize AI to refactor JS (Pages Done: [...])
     [] Have a mentor provide feedback
+
+[] Create JS to update nav standings text content from one file (so updates don't require updating html on every page)
 
 [x] Navigation: Condense individual and team records into dropdown menus.
     [x] Style the dropdowns to match

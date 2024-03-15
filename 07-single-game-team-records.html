@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Single Game Team Records</title>
-    <link href="tsbstyles.css" rel="stylesheet" type="text/css" />
+    <link href="tsbstyles.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
 </head>
-
 
 <body>
     <h1 class="football-title">Single Game Team Records</h1>
@@ -26,11 +25,11 @@
     <div class="container">
         <nav class="sidenav">
             <img src="Tecmo_Super_Bowl.jpg" id="tsb-cover"
-                alt="The cover of the original Tecmo Superbowl video game with a football player wearing a New York Giants helmet." />
+                alt="The cover of the original Tecmo Superbowl video game with a football player wearing a New York Giants helmet.">
 
             <a href="index.html">Home</a>
 
-            <div class="dropdown" id="individual-records" name="individual-records">
+            <div class="dropdown" id="individual-records">
                 <button class="nav-button">Individual Records</button>
                 <div class="dropdown-options">
                     <a href="02-passing-records.html">Passing
@@ -41,7 +40,7 @@
                 </div>
             </div>
 
-            <div class="dropdown" id="team-records" name="team-records">
+            <div class="dropdown" id="team-records">
                 <button class="nav-button">Team Records</button>
                 <div class="dropdown-options">
                     <a href="06-single-season-team-records.html">Single Season Team Records</a>
@@ -54,89 +53,87 @@
             <a href="10-passer-rating-calculator.html">Passer Rating Calculator</a>
             <a href="11-gameplay-soundboard.html">Gameplay Soundboard</a>
 
-            <div id="standings">
+            <div id="latest-standings">
                 <h5 class="football-title football-subtitle">Latest Season Standings:</h5>
-                <p class="standings">Eff's Phoenix Cardinals (Gen IV) 2-0</p>
-                <p class="standings">Eff's Minnesota Vikings (Gen I '93) 15-0</p>
+                <p class="standings" id="eff-latest-season"></p>
+                <p class="standings" id="eff-latest-season-93"></p>
             </div>
 
-            <div id="standings">
+            <div id="previous-standings">
                 <h6 class="football-title football-subtitle">Previous Season:</h6>
-                <p class="standings">Eff's Philadelphia Eagles (Gen IV) 16-0, Superbowl Champions</p>
+                <p class="standings" id="eff-previous-season"></p>
             </div>
         </nav>
 
         <div class="content-1">
             <p class="record-header">Most Offensive Yards:</p>
             <li class="hover-img logo"><a href="#">590 yards, Miami Dolphins(Eff)<span><img src="dolphins.png"
-                            alt="Dolphins helmet" /></li></span></a>
-        </div><br>
+                            alt="Dolphins helmet"></li></span></a>
+        </div>
         <div class="content-2">
             <p class="record-header">Most Passing Yards:</p>
             <li class="hover-img logo"><a href="#">590 yards, Miami Dolphins(Eff)<span><img src="dolphins.png"
-                            alt="Dolphins helmet" /></li></span></a>
-        </div><br>
+                            alt="Dolphins helmet"></li></span></a>
+        </div>
         <div class="content-3">
             <p class="record-header">Most Rushing Yards:</p>
             <li class="hover-img logo"><a href="#">527 yards, Los Angeles Raiders(cpu)<span><img src="raiders.png"
-                            alt="Raiders helmet" /></li></span></a>
-        </div><br>
+                            alt="Raiders helmet"></li></span></a>
+        </div>
         <div class="content-4">
             <p class="record-header">Most First Downs:</p>
             <li class="hover-img logo"><a href="#">23 first downs, Indianapolis Colts(cpu)<span><img src="colts.png"
-                            alt="Colts helmet" /></li></span></a>
-        </div><br>
+                            alt="Colts helmet"></li></span></a>
+        </div>
         <div class="content-5">
             <p class="record-header">Most Points Scored:</p>
             <ul>
                 <p>89 points</p>
                 <li class="hover-img logo"><a href="#">Chicago Bears(Att)<span><img src="Bears.png"
-                                alt="Bears helmet" /></li></span></a>
+                                alt="Bears helmet"></li></span></a>
                 <li class="hover-img logo"><a href="#">Philadelphia Eagles(Eff)<span><img src="Eagles.png"
-                                alt="Eagles helmet" /></li></span></a>
+                                alt="Eagles helmet"></li></span></a>
             </ul>
-        </div><br>
+        </div>
         <div class="content-6">
             <p class="record-header">Biggest Win Differential:</p>
             <ul>
                 <p>89 points (89-0):</p>
                 <li class="hover-img logo"><a href="#">Chicago Bears(Att)<span><img src="Bears.png"
-                                alt="Bears helmet" /></li>
+                                alt="Bears helmet"></li>
                 </span></a>
                 <li class="hover-img logo"><a href="#">Philadelphia Eagles(Eff)<span><img src="Eagles.png"
-                                alt="Eagles helmet" /></li>
+                                alt="Eagles helmet"></li>
                 </span></a>
             </ul>
-        </div><br>
+        </div>
 
         <div class="content-7">
             <p class="record-header">Least Total Yards Allowed:</p>
-            <li class="hover-img logo"><a href="#">0 yards, By Many<span><img src="NFL.png" alt="NFL logo" /></li>
+            <li class="hover-img logo"><a href="#">0 yards, By Many<span><img src="NFL.png" alt="NFL logo"></li>
             </span></a>
-        </div><br>
+        </div>
         <div class="content-8">
             <p class="record-header">Least Passing Yards Allowed:</p>
-            <li class="hover-img logo"><a href="#">0 yards, By Many<span><img src="NFL.png" alt="NFL logo" /></li>
+            <li class="hover-img logo"><a href="#">0 yards, By Many<span><img src="NFL.png" alt="NFL logo"></li>
             </span></a>
-        </div><br>
+        </div>
         <div class="content-9">
             <p class="record-header">Least Rushing Yards Allowed:</p>
-            <li class="hover-img logo"><a href="#">0 yards, By Many<span><img src="NFL.png" alt="NFL logo" /></li>
+            <li class="hover-img logo"><a href="#">0 yards, By Many<span><img src="NFL.png" alt="NFL logo"></li>
             </span></a>
-        </div><br>
+        </div>
         <div class="content-10">
             <p class="record-header">Most Interceptions:</p>
             <li class="hover-img logo"><a href="#">6 interceptions (unknown/uncredited)<span><img src="NFL.png"
-                            alt="NFL logo" /></li></span></a>
-        </div><br>
+                            alt="NFL logo"></li></span></a>
+        </div>
     </div>
-</body>
-<footer class="framed-bg">
-    <i>
-        <p>&copyCopyright Jeffrey Hill, 2023.</p>
+    <footer class="framed-bg">
+        <p>&copy;Copyright Jeffrey Hill, 2024</p>
         E-mail: <a href="mailto:phoenixshredds@yahoo.com">phoenixshredds@yahoo.com</a>
-    </i>
-</footer>
-<br><br>
+    </footer>
+    <script src="script.js"></script>
+</body>
 
 </html>

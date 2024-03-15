@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Passing Records</title>
-    <link href="tsbstyles.css" rel="stylesheet" type="text/css" />
-    <link src="script.js" src="web-script.js" />
+    <link href="tsbstyles.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
@@ -22,16 +21,16 @@
             <li>* asterisk symbol indicates manual count above in-game cap of 63 touchdowns.
             <li>+ plus symbol indicates maximum in-game yardage (4095).</li>
         </ul>
-    </div><br>
+    </div>
 
     <div class="container">
         <nav class="sidenav">
             <img src="Tecmo_Super_Bowl.jpg" id="tsb-cover"
-                alt="The cover of the original Tecmo Superbowl video game with a football player wearing a New York Giants helmet." />
+                alt="The cover of the original Tecmo Superbowl video game with a football player wearing a New York Giants helmet.">
 
             <a href="index.html">Home</a>
 
-            <div class="dropdown" id="individual-records" name="individual-records">
+            <div class="dropdown" id="individual-records">
                 <button class="nav-button">Individual Records</button>
                 <div class="dropdown-options">
                     <a href="02-passing-records.html">Passing
@@ -42,7 +41,7 @@
                 </div>
             </div>
 
-            <div class="dropdown" id="team-records" name="team-records">
+            <div class="dropdown" id="team-records">
                 <button class="nav-button">Team Records</button>
                 <div class="dropdown-options">
                     <a href="06-single-season-team-records.html">Single Season Team Records</a>
@@ -55,108 +54,104 @@
             <a href="10-passer-rating-calculator.html">Passer Rating Calculator</a>
             <a href="11-gameplay-soundboard.html">Gameplay Soundboard</a>
 
-            <div id="standings">
+            <div id="latest-standings">
                 <h5 class="football-title football-subtitle">Latest Season Standings:</h5>
-                <p class="standings">Eff's Phoenix Cardinals (Gen IV) 2-0</p>
-                <p class="standings">Eff's Minnesota Vikings (Gen I '93) 15-0</p>
+                <p class="standings" id="eff-latest-season"></p>
+                <p class="standings" id="eff-latest-season-93"></p>
             </div>
 
-            <div id="standings">
+            <div id="previous-standings">
                 <h6 class="football-title football-subtitle">Previous Season:</h6>
-                <p class="standings">Eff's Philadelphia Eagles (Gen IV) 16-0, Superbowl Champions</p>
+                <p class="standings" id="eff-previous-season"></p>
             </div>
         </nav>
 
         <div class="content-1">
             <p class="record-header">Highest QB Rating:</p>
-            <li class="hover-img"><a href="#">Season: 305.9 rating, QB Bills(Eff)<span><img src="QB-Bills.png"
-                            alt="QB Bills profile" /></li></span></a>
-        </div><br>
+            <li class="hover-img"><a href="#">Season: 305.9 rating, QB Bills(Eff)<span><img src="QB-Bills.png" alt="QB Bills profile"></li></span></a>
+        </div>
         <div class="content-2">
             <p class="record-header">Highest Completion Percentage:</p>
-            <li class="hover-img logo"><a href="#">Game: 100% (by many)<span><img src="NFL.png" alt="NFL icon" />
+            <li class="hover-img logo"><a href="#">Game: 100% (by many)<span><img src="NFL.png" alt="NFL icon">
             </li>
             </span></a>
             <li class="hover-img"><a href="#">Season: 89.0%, Joe Montana(Eff)<span><img src="Joe-Montana.png"
-                            alt="Joe Montana profile" /></li></span></a>
-        </div><br>
+                            alt="Joe Montana profile"></li></span></a>
+        </div>
         <div class="content-3">
             <p class="record-header">Most Pass Attempts:</p>
             <li class="hover-img"><a href="#">Season: 325 attempts, Warren Moon(Rew)<span><img src="Warren-Moon.png"
-                            alt="Warren Moon profile" /></li></span></a>
-        </div><br>
+                            alt="Warren Moon profile"></li></span></a>
+        </div>
         <div class="content-4">
             <p class="record-header">Most Pass Completions:</p>
             <li class="hover-img"><a href="#">Season: 216 completions, Warren Moon(Rew)<span><img src="Warren-Moon.png"
-                            alt="Warren Moon profile" /></li></span></a>
-        </div><br>
+                            alt="Warren Moon profile"></li></span></a>
+        </div>
         <div class="content-5">
             <p class="record-header">Most Passing Yards:</p>
             <li class="hover-img"><a href="#">Game: 590 yards, Dan Marino(Eff)<span><img src="Dan-Marino.png"
-                            alt="Dan Marino profile" /></li></span></a>
+                            alt="Dan Marino profile"></li></span></a>
             <li class="hover-img"><a href="#">Season: 6200 yards, Warren Moon(Rew)<span><img src="Warren-Moon.png"
-                            alt="Warren Moon profile" /></li></span></a>
-        </div><br>
+                            alt="Warren Moon profile"></li></span></a>
+        </div>
         <div class="content-6">
             <p class="record-header">Most Total Offense Yards (Passing/Rushing):</p>
             <li class="hover-img"><a href="#">Game: 590 yards, Dan Marino(Eff)<span><img src="Dan-Marino.png"
-                            alt="Dan Marino profile" /></li></span></a>
+                            alt="Dan Marino profile"></li></span></a>
             <li class="hover-img"><a href="#">Season: 6484 yards, QB Eagles(Eff) Gen IV<span><img src="QB-Eagles.png"
-                            alt="QB Eagles profile" /></li></span></a>
-        </div><br>
+                            alt="QB Eagles profile"></li></span></a>
+        </div>
         <div class="content-7">
             <p class="record-header">Highest Yards Per Attempt Average:</p>
             <li class="hover-img"><a href="#">Season: 28.8 yards per attempt, QB Bills(Eff)<span><img src="QB-Bills.png"
-                            alt="QB Bills profile" /></li></span></a>
-        </div><br>
+                            alt="QB Bills profile"></li></span></a>
+        </div>
         <div class="content-8">
             <p class="record-header">Most Touchdown Passes:</p>
             <li class="hover-img"><a href="#">Season: 103* touchdowns, Warren Moon(Eff) Gen IV<span><img
-                            src="Warren-Moon.png" alt="Warren Moon profile" /></li></span></a>
-        </div><br>
+                            src="Warren-Moon.png" alt="Warren Moon profile"></li></span></a>
+        </div>
         <div class="content-9">
             <p class="record-header">Most Total Touchdowns (Passing/Rushing):</p>
             <li class="hover-img"><a href="#">Season: 109* touchdowns, QB Eagles(Eff) Gen IV<span><img
-                            src="QB-Eagles.png" alt="QB Eagles profile" /></li></span></a>
-        </div><br>
+                            src="QB-Eagles.png" alt="QB Eagles profile"></li></span></a>
+        </div>
         <div class="content-10">
             <p class="record-header">Lowest Interception Percentage:</p>
-            <ul>Season: 0.0%: <br><br>
+            <ul>Season: 0.0%: 
                 <li class="hover-img"><a href="#">Steve DeBerg(Att) Gen I<span><img src="Steve-DeBerg.png"
-                                alt="Steve DeBerg profile" /></li>
+                                alt="Steve DeBerg profile"></li>
                 </span></a>
                 <li class="hover-img"><a href="#">Jim Harbaugh(Att) Gen I<span><img src="Jim-Harbaugh.png"
-                                alt="Jim Harbaugh profile" /></li>
+                                alt="Jim Harbaugh profile"></li>
                 </span></a>
                 <li class="hover-img"><a href="#">Joe Montana(Eff)<span><img src="Joe-Montana.png"
-                                alt="Joe Montana profile" /></li></span></a>
-                <li class="hover-img"><a href="#">QB Bills(Eff)<span><img src="QB-Bills.png" alt="QB Bills profile" />
+                                alt="Joe Montana profile"></li></span></a>
+                <li class="hover-img"><a href="#">QB Bills(Eff)<span><img src="QB-Bills.png" alt="QB Bills profile">
                 </li></span></a>
             </ul>
         </div>
         <div class="content-11">
             <p class="record-header">Most Passes Without Interception:</p>
-            <li class="hover-img logo"><a href="#">Season: New/TBD (Eff, Att)<span><img src="NFL.png" alt="NFL icon" />
+            <li class="hover-img logo"><a href="#">Season: New/TBD (Eff, Att)<span><img src="NFL.png" alt="NFL icon" >
             </li>
             </span></a>
         </div>
         <div class="content-12">
             <p class="record-header">Most Interceptions Thrown:</p>
             <li class="hover-img"><a href="#">Game: 6 interceptions, Bubby Brister(cpu)<span><img
-                            src="Bubby-Brister.png" alt="Bubby Brister profile" />
+                            src="Bubby-Brister.png" alt="Bubby Brister profile" >
             <li class="hover-img"><a href="#">Season: 35 interceptions, QB Browns(cpu)<span><img src="QB-Browns.png"
-                            alt="QB Browns profile" />
+                            alt="QB Browns profile" >
             </li></span></a>
             <p><i>Note: Counts as negative for records count.</i></p>
         </div>
     </div>
-</body>
-
-<footer class="framed-bg">
-    <i>
-        <p>&copyCopyright Jeffrey Hill, 2023.</p>
+    <footer class="framed-bg">
+        <p>&copy;Copyright Jeffrey Hill, 2024</p>
         E-mail: <a href="mailto:phoenixshredds@yahoo.com">phoenixshredds@yahoo.com</a>
-    </i>
-</footer>
-
+    </footer>
+    <script src="script.js"></script>
+</body>
 </html>
