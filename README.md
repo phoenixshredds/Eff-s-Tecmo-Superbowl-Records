@@ -8,18 +8,20 @@ As of now I am using this file as a to-do list. Documentation to follow.
 Code quality:
     [*] Validate HTML and adjust accordingly 
         Pages Done: [x]index. Improved: [*]all others
-    [] Utilize AI to refactor CSS (Pages Done: [...])
+    [] Utilize AI to refactor CSS
     [] Utilize AI to refactor JS (Pages Done: [...])
     [] Have a mentor provide feedback
 
-[] Create JS to update nav standings text content from one file (so updates don't require updating html on every page)
+[x] Create JS to update nav standings text content from one file (so updates don't require updating html on every page)
+[] Create IDs & JS for ALL records (so they can be updated from a single file)
+    Pages done: ...
 
 [x] Navigation: Condense individual and team records into dropdown menus.
     [x] Style the dropdowns to match
 
 [] Add transition effects:
-    [] Dropdown menu opacity/x axis
-    [] Record card opacity/x axis
+    [] Dropdown menu 
+    [] Record card hidden/not-hidden
     [] TSB cover "pick up" effect: rotate clockwise and increase size, ease-in-out.
 
 [] Design laces & seams for football header
@@ -45,8 +47,7 @@ Code quality:
 
 [] Right side interactive scroll menu of notable TSB players/records
 
-[] Improving Calculator
-    [] Refactor if/else to array of objects (objects being the conditions)
+[x] Improving Calculator
     [x] Debug the alerts displaying twice
     [x] Fix an incorrect error message
 

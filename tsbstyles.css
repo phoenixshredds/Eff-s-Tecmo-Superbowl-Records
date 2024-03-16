@@ -14,6 +14,12 @@
 /* Tecmo Superbowl logo spacing and sizing */
 #tsb-cover {
   padding: 1rem;
+  transition: scale 1s, transform 1s ease-in-out;
+}
+
+#tsb-cover:hover {
+  scale: 125%;
+  transform: rotate(12deg) translate(3rem, 1rem); 
 }
 
 /* Side navigation menu */
