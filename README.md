@@ -20,9 +20,11 @@ Code quality:
     [x] Style the dropdowns to match
 
 [] Add transition effects:
-    [] Dropdown menu 
-    [] Record card hidden/not-hidden
-    [] TSB cover "pick up" effect: rotate clockwise and increase size, ease-in-out.
+    [x] Dropdown menu 
+    [x] Record card hidden/not-hidden
+        [] Translates up when low in window
+        [] Mirrors transition effect when hover ends
+    [x] TSB cover "pick up" effect: rotate clockwise and increase size, ease-in-out.
 
 [] Design laces & seams for football header
 

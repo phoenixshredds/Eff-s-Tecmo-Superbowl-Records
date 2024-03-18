@@ -7,4 +7,4 @@ effLatestSeason.textContent = "Eff's Phoenix Cardinals (Gen IV) 2-0";
 effLatestSeason93.textContent = "Eff's Minnesota Vikings (Gen I '93) 15-0";
 effPreviousSeason.textContent = "Eff's Philadelphia Eagles (Gen IV) 16-0, Superbowl Champions";
 
-
+document.querySelector('.hover-img:hover img');
