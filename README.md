@@ -22,7 +22,10 @@ Code quality:
 [] Add transition effects:
     [x] Dropdown menu 
     [x] Record card hidden/not-hidden
-        [] Translates up when low in window
+        [x] Translates up when low in window
+            [x] Passing records
+            [] All other pages
+            [] Transition is reset after completed
         [] Mirrors transition effect when hover ends
     [x] TSB cover "pick up" effect: rotate clockwise and increase size, ease-in-out.
 

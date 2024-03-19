@@ -484,6 +484,7 @@ tr:hover {
   opacity: 1;
   transform: scale(1) translateY(20%);
   overflow: hidden;
+  transition: transform 1s ease-in-out, opacity 1ms ease-in-out, visibility 1s ease-in-out;
 }
 
 /* Styles font of list links */
