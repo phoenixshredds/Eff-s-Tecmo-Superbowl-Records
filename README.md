@@ -28,8 +28,12 @@ Code quality:
 
 [] Design laces & seams for football header
 
-[] Create class for team logo colors: border ridge with primary team colors, make each team's color a var([][]variable[]name).
-    [] Add to all records (Pages Done: [...])
+[x] Create class for border team colors.
+    [x] Add to all records
+
+[] Snapshot remaining record holders
+    [] Add remaining images to records
+
 
 [x] Latest Standings/Seasons below Nav 
 

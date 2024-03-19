@@ -1,6 +1,6 @@
 /* Global color settings */
 :root {
-  --football-color: rgb(51, 38, 4);
+  --team-color: rgb(51, 38, 4);
   --grass-color: rgb(43, 88, 37);
   --dark-grass: rgb(13, 48, 8);
   --light-grass: rgb(29, 139, 73);
@@ -9,6 +9,70 @@
   --transparent-brown: #362404CC;
   --charcoal: #130c02;
   --laces: #faf8f3;
+}
+
+.browns2 {
+  --charcoal: #130c02;
+}
+
+.yellow, .steelers, .packers, .chiefs, .chargers, .redskins, .rams, .vikings {
+  --team-color: yellow;
+}
+
+.gold, .niners, .saints {
+  --team-color: rgb(180, 159, 23);
+}
+
+.blue, .bills, .colts, .giants2, .seahawks2, .rams2, .broncos2 {
+  --team-color: blue;
+}
+
+.light-blue, .lions2 {
+  --team-color: lightblue;
+}
+
+.teal, .dolphins2 {
+  --team-color: teal;
+}
+
+.orange, .bucs {
+  --team-color: orange;
+}
+
+.orangered, .bengals, .browns, .bears, .broncos, .dolphins {
+  --team-color: orangered;
+}
+
+.green, .eagles2, .jets2, .packers2 {
+  --team-color: rgb(0, 128, 49);
+}
+
+.white, .colts2, .jets {
+  --team-color: white;
+}
+
+.red, .oilers, .giants, .niners2, .chiefs2, .bucs2, .falcons {
+  --team-color: rgb(202, 0, 0);
+}
+
+.burdgundy, .redskins2 {
+  --team-color: rgb(87, 0, 0);
+}
+
+.black, .raiders, .steelers2, .falcons2, .bengals2 {
+  --team-color: black;
+}
+
+.silver, .eagles, .lions, .raiders2, .seahawks, .cowboys2 {
+  --team-color: silver;
+}
+
+.navy, .bears2, .chargers2, .cowboys {
+  --team-color: navy;
+}
+
+.purple, .vikings2 {
+  --team-color: purple;
 }
 
 /* Tecmo Superbowl logo spacing and sizing */
@@ -72,7 +136,7 @@
 footer a:hover,
 .sidenav a:hover, .nav-button:hover {
   color: var(--laces);
-  background-color: var(--football-color);
+  background-color: var(--team-color);
   border-radius: 0.5em;
   border-color: var(--charcoal);
   filter: drop-shadow(1.1rem -1.1rem 1.1rem var(--charcoal));
@@ -85,7 +149,7 @@ footer a:hover,
   position: relative;
   margin: 2rem auto;
   color: var(--laces);
-  background-color: var(--football-color);
+  background-color: var(--team-color);
   filter: drop-shadow(0.75rem -1.5rem 0.75rem var(--charcoal));
   border-radius: 47%;
   padding: 3.125rem;
@@ -233,7 +297,7 @@ footer a:hover,
 .content-16,
 .content-17,
 .content-18 {
-  border: 3px solid var(--football-color);
+  border: 3px solid var(--team-color);
   border-radius: 0.3rem;
   background-color: var(--grass-color);
   color: var(--laces);
@@ -251,7 +315,7 @@ footer a:hover,
 
 /* Calculator container styles */
 .calculator {
-  border: 5px solid var(--football-color);
+  border: 5px solid var(--team-color);
   border-radius: 1rem;
   width: fit-content;
   height: fit-content;
@@ -287,7 +351,7 @@ footer a:hover,
   height: 3rem;
   border: none;
   border-radius: 1rem;
-  background: var(--football-color);
+  background: var(--team-color);
   color: var(--laces);
   font-weight: bold;
   font-size: 1rem;
@@ -405,7 +469,7 @@ tr:hover {
   filter: drop-shadow(1.5rem -1.75rem 00.75rem #000);
   color: #000;
   width: 0%;
-  border: 0.4rem solid var(--football-color);
+  border: 0.4rem solid var(--team-color);
   z-index: 2;
   visibility: hidden;
   opacity: 0;
@@ -438,7 +502,7 @@ li>a {
 /* Creates magazine style large letter for the first letter of a paragraph */
 .first-letter::first-letter {
   font-size: 2.5rem;
-  color: var(--football-color);
+  color: var(--team-color);
 }
 
 /* Positions the meter */
