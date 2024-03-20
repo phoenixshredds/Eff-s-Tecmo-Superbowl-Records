@@ -12,18 +12,25 @@ effLatestSeason.textContent = "Eff's Phoenix Cardinals (Gen IV) 2-0";
 effLatestSeason93.textContent = "Eff's Minnesota Vikings (Gen I '93) 15-0";
 effPreviousSeason.textContent = "Eff's Philadelphia Eagles (Gen IV) 16-0, Superbowl Champions";
 
-// Finds mouse Y position
-const mouseYPosition = (event) => {
+
+
+// Finds mouse Y position on mouse over
+const mouseYOver = (event) => {
     let mouseY = event.clientY;
     document.getElementById('mouseY').value = mouseY;
 
     const hoverImg = document.querySelector('.hover-img:hover img');
 
-    // Pushes image up whem mouseY is bottom half of screen
-    if (mouseY > 350) {
+    // Pushes hover image up when mouseY is bottom half of screen
+    if (mouseY >= window.innerHeight * 0.5) {
         hoverImg.style.transform = "scale(1) translateY(-100%)";
+    } else if (mouseY < window.innerHeight * 0.5) {
+        hoverImg.style.transform = "scale(1) translateY(20%)";
     } 
-} 
+}
 
-// Listens for mouse movement and mouse hover event on lower half of screen
-document.addEventListener("mousemove", mouseYPosition);
+// Transitions image back to original state on mouseout --- NOT WORKING!
+
+// Listens for mouse events
+document.addEventListener("mouseover", mouseYOver);
+document.addEventListener("mouseout", mouseYOut);

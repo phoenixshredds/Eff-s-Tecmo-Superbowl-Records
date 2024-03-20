@@ -464,7 +464,7 @@ tr:hover {
 .hover-img img {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 6%;
   border-radius: 0.75rem;
   filter: drop-shadow(1.5rem -1.75rem 00.75rem #000);
   color: #000;
@@ -473,17 +473,17 @@ tr:hover {
   z-index: 2;
   visibility: hidden;
   opacity: 0;
-  transform: scale(0);
+  transform: scale(0) translateY(0%);
   transition: transform 1s ease-in-out, opacity 1ms ease-in-out, visibility 1s ease-in-out;
 }
 
 /* Displays profile image of player or team when cursor hovers over a record list element. */
 .hover-img:hover img {
   visibility: visible;
-  width: 95%;
+  width: 85%;
   opacity: 1;
-  transform: scale(1) translateY(20%);
   overflow: hidden;
+  transform: scale(1) translateY(20%);
   transition: transform 1s ease-in-out, opacity 1ms ease-in-out, visibility 1s ease-in-out;
 }
 
