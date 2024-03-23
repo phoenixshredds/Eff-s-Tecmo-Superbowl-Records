@@ -13,6 +13,7 @@ effLatestSeason93.textContent = "Eff's Minnesota Vikings (Gen I '93) 15-0";
 effPreviousSeason.textContent = "Eff's Philadelphia Eagles (Gen IV) 16-0, Superbowl Champions";
 
 
+/* This may end up being deleted...
 
 // Finds mouse Y position on mouse over
 const mouseYOver = (event) => {
@@ -22,15 +23,19 @@ const mouseYOver = (event) => {
     const hoverImg = document.querySelector('.hover-img:hover img');
 
     // Pushes hover image up when mouseY is bottom half of screen
-    if (mouseY >= window.innerHeight * 0.5) {
+    if (event.type === "mouseover" && mouseY >= window.innerHeight * 0.5) {
         hoverImg.style.transform = "scale(1) translateY(-100%)";
-    } else if (mouseY < window.innerHeight * 0.5) {
+    } else if (event.type === "mouseover" && mouseY < window.innerHeight * 0.5) {
         hoverImg.style.transform = "scale(1) translateY(20%)";
-    } 
-}
+    } else if (event.type === "mouseout") {
+        hoverImg.style.transform = "scale(0) translateY(0%)"; 
+    }
+} 
 
-// Transitions image back to original state on mouseout --- NOT WORKING!
+// Transitions image back to original state
+// hoverImg.style.transform = "scale(0) translateY(0%)";    
 
 // Listens for mouse events
 document.addEventListener("mouseover", mouseYOver);
 document.addEventListener("mouseout", mouseYOut);
+*/
