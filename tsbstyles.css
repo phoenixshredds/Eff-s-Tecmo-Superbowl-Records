@@ -460,31 +460,26 @@ tr:hover {
   scale: 1.25;
 }
 
-/* Styles the hover image */
-.hover-img img {
+/* Styles the snapshot image */
+.snapshot {
   position: absolute;
-  top: 0;
-  left: 6%;
+  visibility: hidden;
   border-radius: 0.75rem;
   filter: drop-shadow(1.5rem -1.75rem 00.75rem #000);
   color: #000;
-  width: 0%;
   border: 0.4rem solid var(--team-color);
   z-index: 2;
-  visibility: hidden;
   opacity: 0;
-  transform: scale(0) translateY(0%);
-  transition: transform 1s ease-in-out, opacity 1ms ease-in-out, visibility 1s ease-in-out;
+  transform: scale(0);
+  transition: all 1s ease-in-out;
 }
 
-/* Displays profile image of player or team when cursor hovers over a record list element. */
-.hover-img:hover img {
+/* Displays profile image of player or team when cursor hovers over a record element. */
+.record:hover .snapshot {
   visibility: visible;
-  width: 85%;
   opacity: 1;
+  transform: scale(0.7);
   overflow: hidden;
-  transform: scale(1) translateY(20%);
-  transition: transform 1s ease-in-out, opacity 1ms ease-in-out, visibility 1s ease-in-out;
 }
 
 /* Styles font of list links */
