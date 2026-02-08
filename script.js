@@ -1,41 +1,76 @@
-// Accesses IDs in the DOM
-const effLatestSeason = document.getElementById('eff-latest-season');
-const effLatestSeason93 = document.getElementById('eff-latest-season-93');
-const effPreviousSeason = document.getElementById('eff-previous-season');
-const attLatestSeason = document.getElementById('att-latest-season');
-const attPreviousSeason = document.getElementById('att-previous-season');
-const rewLatestSeason = document.getElementById('rew-latest-season');
-const rewPreviousSeason = document.getElementById('rew-previous-season');
+// 1. MOUSE FUNCTIONS (Keeps the Body tag from crashing)
+function mouseYOver(event) {
+    // We'll put your scaling logic back here once the data shows up!
+}
 
-// Updates Latest Standings in the navigation for all pages
-effLatestSeason.textContent = "Eff's Phoenix Cardinals (Gen IV) 2-0";
-effLatestSeason93.textContent = "Eff's Minnesota Vikings (Gen I '93) 15-0";
-effPreviousSeason.textContent = "Eff's Philadelphia Eagles (Gen IV) 16-0, Superbowl Champions";
+function mouseYOut(event) {
+    // Added this because your console was looking for it
+}
 
+// 2. THE DATA ENGINE
+async function loadRecords() {
+    const mainContainer = document.getElementById('records-list');
+    if (!mainContainer) return;
 
-/* This may end up being deleted...
+    try {
+        // Look at the URL to see what category the user wants
+        const urlParams = new URLSearchParams(window.location.search);
+        const category = urlParams.get('cat') || 'passing'; // Default to 'passing'
 
-// Finds mouse Y position on mouse over
-const mouseYOver = (event) => {
-    let mouseY = event.clientY;
-    document.getElementById('mouseY').value = mouseY;
+        const response = await fetch('records.json');
+        const data = await response.json();
 
-    const hoverImg = document.querySelector('.hover-img:hover img');
+        // Grab the specific data (e.g., data['passing'] or data['rushing'])
+        const categoryData = data[category];
 
-    // Pushes hover image up when mouseY is bottom half of screen
-    if (event.type === "mouseover" && mouseY >= window.innerHeight * 0.5) {
-        hoverImg.style.transform = "scale(1) translateY(-100%)";
-    } else if (event.type === "mouseover" && mouseY < window.innerHeight * 0.5) {
-        hoverImg.style.transform = "scale(1) translateY(20%)";
-    } else if (event.type === "mouseout") {
-        hoverImg.style.transform = "scale(0) translateY(0%)"; 
+        if (categoryData) {
+            // Update the page title to match the category
+            document.querySelector('.football-title').textContent = categoryData.title;
+
+            // Build the grid
+            renderGrid(categoryData.sections);
+        }
+    } catch (error) {
+        console.error("Error loading category:", error);
     }
-} 
+}
 
-// Transitions image back to original state
-// hoverImg.style.transform = "scale(0) translateY(0%)";    
+// Clean rendering function to keep your code tidy
+function renderGrid(sections) {
+    const mainContainer = document.getElementById('records-list');
+    mainContainer.innerHTML = ""; // Clear old content
 
-// Listens for mouse events
-document.addEventListener("mouseover", mouseYOver);
-document.addEventListener("mouseout", mouseYOut);
-*/
+    sections.forEach((section, index) => {
+        const sectionElement = document.createElement('section');
+        sectionElement.className = `content-${index + 1}`;
+
+        let html = `<p class="record-header">${section.title}:</p>`;
+        section.entries.forEach(entry => {
+            html += `
+                <li class="hover-img ${entry.teamClass}">
+                    <a href="#">
+                        ${entry.label}: ${entry.stat}, ${entry.player}(${entry.tag})
+                        <img src="${entry.image}" alt="${entry.player}">
+                    </a>
+                </li>`;
+        });
+        sectionElement.innerHTML = html;
+        mainContainer.appendChild(sectionElement);
+    });
+}
+// 3. STANDINGS (Your existing sidebar logic)
+function updateStandings() {
+    const effLatest = document.getElementById('eff-latest-season');
+    const eff93 = document.getElementById('eff-latest-season-93');
+    const effPrev = document.getElementById('eff-previous-season');
+
+    if (effLatest) effLatest.textContent = "Eff's Phoenix Cardinals (Gen IV) 2-0";
+    if (eff93) eff93.textContent = "Eff's Minnesota Vikings (Gen I '93) 15-0";
+    if (effPrev) effPrev.textContent = "Eff's Philadelphia Eagles (Gen IV) 16-0, Superbowl Champions";
+}
+
+// 4. RUN EVERYTHING ON LOAD
+document.addEventListener('DOMContentLoaded', () => {
+    updateStandings();
+    loadRecords();
+});

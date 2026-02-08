@@ -1,0 +1,20 @@
+{
+  "passing": {
+    "title": "Individual Passing Records",
+    "sections": [
+      {
+        "title": "Highest QB Rating",
+        "entries": [
+          { "label": "Season", "stat": "305.9 rating", "player": "QB Bills", "tag": "Eff", "image": "QB-Bills.png", "teamClass": "bills" }
+        ]
+      },
+      {
+        "title": "Most Passing Yards",
+        "entries": [
+          { "label": "Game", "stat": "590 yards", "player": "Dan Marino", "tag": "Eff", "image": "Dan-Marino.png", "teamClass": "dolphins" },
+          { "label": "Season", "stat": "6200 yards", "player": "Warren Moon", "tag": "Rew", "image": "Warren-Moon.png", "teamClass": "oilers" }
+        ]
+      }
+    ]
+  }
+}
