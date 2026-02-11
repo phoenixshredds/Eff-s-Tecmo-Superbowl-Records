@@ -12,7 +12,7 @@
 </head>
 
 <body onmousemove="mouseYPosition(event)">
-    <header class="title">
+    <header>
         <h1 class="football-title">Welcome to the NEW Eff's Tecmo Superbowl Records</h1>
     </header>
     <div class="container">
@@ -23,15 +23,15 @@
 
             <a href="index.html">Home</a>
 
-<div class="dropdown" id="individual-records">
-    <button class="nav-button">Individual Records</button>
-    <div class="dropdown-options">
-        <a href="records.html?cat=passing">Passing Records</a>
-        <a href="records.html?cat=rushing">Rushing Records</a>
-        <a href="records.html?cat=receiving">Receiving & All-Purpose Records</a>
-        <a href="records.html?cat=defense">Defense & Special Teams Records</a>
-    </div>
-</div>
+            <div class="dropdown" id="individual-records">
+                <button class="nav-button">Individual Records</button>
+                <div class="dropdown-options">
+                    <a href="records.html?cat=passing">Passing Records</a>
+                    <a href="records.html?cat=rushing">Rushing Records</a>
+                    <a href="records.html?cat=receiving">Receiving & All-Purpose Records</a>
+                    <a href="records.html?cat=defense">Defense & Special Teams Records</a>
+                </div>
+            </div>
 
             <div class="dropdown" id="team-records">
                 <button class="nav-button">Team Records</button>
@@ -55,278 +55,288 @@
             <div id="previous-standings">
                 <h6 class="football-title football-subtitle">Previous Season:</h6>
                 <p class="standings" id="eff-previous-season"></p>
+                <p class="standings" id="eff-previous-season-93"></p>
             </div>
         </nav>
+        <main id="content-wrapper">
+            <div class="container">
+                <div class="content-1">
+                    <p class="intro">Introduction</p>
+                    <p class="first-letter">Once upon a time there was a freewebs site called, "Eff, Att and Rew's Tecmo
+                        Superbowl Records." That
+                        site no
+                        longer exists.
+                        However, Eff (that's me) kept all of the records and continued to update them over the years.
+                        This website is the result of that record keeping combined with some web development skills.
+                    </p>
+                </div>
 
-        <div class="content-1">
-            <p class="intro">Introduction</p>
-            <p class="first-letter">Once upon a time there was a freewebs site called, "Eff, Att and Rew's Tecmo
-                Superbowl Records." That
-                site no
-                longer exists.
-                However, Eff (that's me) kept all of the records and continued to update them over the years.
-                This website is the result of that record keeping combined with some web development skills.
-            </p>
-        </div>
+                <div class="content-2">
+                    <h3 class="football-title football-subtitle"><span></span>Total Records Leaders:</h3>
+                    <div class="meter">
+                        <meter value="87" min="0" max="87">87</meter>&nbsp;87 Records Tracked
+                        <meter value="64" min="0" max="87">64</meter>&nbsp;64 Records by Effer
+                        <meter value="24" min="0" max="87">24</meter>&nbsp;24 Records by CPU
+                        <meter value="20" min="0" max="87">20</meter>&nbsp;20 Records by Atter
+                        <meter value="12" min="0" max="87">12</meter>&nbsp;12 Records by Rewer
+                    </div>
+                </div>
 
-        <div class="content-2">
-            <h3 class="football-title football-subtitle"><span></span>Total Records Leaders:</h3>
-            <div class="meter">
-                <meter value="87" min="0" max="87">87</meter>&nbsp;87 Records Tracked
-                <meter value="64" min="0" max="87">64</meter>&nbsp;64 Records by Effer
-                <meter value="24" min="0" max="87">24</meter>&nbsp;24 Records by CPU
-                <meter value="20" min="0" max="87">20</meter>&nbsp;20 Records by Atter
-                <meter value="12" min="0" max="87">12</meter>&nbsp;12 Records by Rewer
+                <div class="content-3" id="latest-updates">
+                    <h4 class="football-title football-subtitle">Latest Updates:</h4>
+                    <p class="first-letter">This new look records site includes new records like Most Passes W/O an
+                        Interception
+                        (Season), QB Total
+                        Touchdowns (Passing + Rushing) and more.</p>
+                </div>
+
+                <div class="content-4">
+                    <p class="football-title football-subtitle">Current Streak (including post-season):</p>
+                    <div class="meter">
+                        <meter value="197" min="0" max="197">197</meter>&nbsp;197 Wins (Eff's Record)
+                        <meter value="80" min="0" max="197">80</meter>&nbsp;80 Wins by Atter
+                        <meter value="57" min="0" max="197">57</meter>&nbsp;57 Wins by Effer
+                        <meter value="19" min="0" max="197">19</meter>&nbsp;19 Wins by Rewer
+                    </div>
+
+                </div>
+
+                <div class="content-5" id="rosters">
+                    <p class="football-title football-subtitle">What about rosters?:</p>
+                    <p>You may have noticed the present records are with the original 1991 Tecmo Superbowl roster. New
+                        to
+                        this
+                        site is
+                        the inclusion of the 1993 roster (from the SNES version). I have finalized the roster to include
+                        updated
+                        schedule (modified to fit into 17 weeks for NES), accurate kr/pr (excluding defensive backs),
+                        playbooks,
+                        and simulation ratings. Any records with the '93 roster will count for the NES.</p>
+                    <p> A copy of all records will be made for the SNES version. As of now, we have no seasons in the
+                        books
+                        for
+                        SNES.</p>
+                </div>
+
+                <div class="content-6" id="rules">
+                    <p class="football-title football-subtitle">Rules of Play:</p>
+                    <p class="first-letter">We don't just play the game however we want. There are certain rules we must
+                        follow
+                        for
+                        these records to
+                        be considered valid and fair. Anyone who has played TSB enough knows there are ways to cheat the
+                        system,
+                        so
+                        here
+                        are our rules:
+                    </p>
+                    <ul>
+                        <li>No lurching, which is where you dive at the QB immediately after the snap. Defensive lineman
+                            used
+                            must
+                            grapple or drop back before pursuing the QB. All other defenders have no limits.</li>
+                        <li>No onside kicks unless tied or trailing in the 4th quarter or overtime. Any accidental
+                            onside
+                            kicks
+                            must
+                            be punted away.</li>
+                        <li>When defending kicking attempts, use of 4th player down (rolb) is prohibited due to ability
+                            to
+                            run
+                            straight by the blockers.</li>
+                    </ul>
+                    <p>
+                        We used to not allow WRs to be used in the backfield on traditional running players, but have
+                        since
+                        changed
+                        that
+                        rule to allow freedom of position swapping. After all, no WR is going to be Bo Jackson or
+                        Christian
+                        Okoye.
+                    </p>
+                    <p>As this is all enforced via honor system. there are a few other considerations: We look down upon
+                        using
+                        save
+                        states to constantly re-try to play games for records. In general, we just play the games and
+                        they
+                        fall
+                        as
+                        they
+                        may.</p>
+                </div>
+                <div class="content-7">
+                    <table class="wall-of-fame">
+                        <caption class="football-title table-caption">Wall of Fame - Individual Records</caption>
+                        <tr class="row-0">
+                            <th>Player</th>
+                            <th>Record</th>
+                            <th>Stats</th>
+                            <th>User</th>
+                            <th>Gen</th>
+                        </tr>
+                        <tr>
+                            <td>QB Bills</td>
+                            <td>Passer Rating (Season)</td>
+                            <td>305.9 rating</td>
+                            <td>Eff</td>
+                            <td>III</td>
+                        </tr>
+                        <tr>
+                            <td>Warren Moon</td>
+                            <td>Passing Yards (Season)</td>
+                            <td>6200 yards</td>
+                            <td>Rew</td>
+                            <td>I</td>
+                        </tr>
+                        <tr>
+                            <td>QB Eagles</td>
+                            <td>Total Touchdowns (Season)</td>
+                            <td>109 touchdowns</td>
+                            <td>Eff</td>
+                            <td>IV</td>
+                        </tr>
+
+                        <tr>
+                            <td>Bo Jackson</td>
+                            <td>Rushing Yards (Game)</td>
+                            <td>474 yards</td>
+                            <td>Eff</td>
+                            <td>n/a</td>
+                        </tr>
+                        <tr>
+                            <td>Neal Anderson</td>
+                            <td>Scrimmage Touchdowns (Season)</td>
+                            <td>95 touchdowns</td>
+                            <td>Att</td>
+                            <td>I</td>
+                        </tr>
+                        <tr>
+                            <td>Drew Hill</td>
+                            <td>Receiving Yards (Season)</td>
+                            <td>3448 yards</td>
+                            <td>Eff</td>
+                            <td>IV</td>
+                        </tr>
+                        <tr>
+                            <td>Mike Singletary</td>
+                            <td>Sacks (Season)</td>
+                            <td>98 sacks</td>
+                            <td>Att</td>
+                            <td>I</td>
+                        </tr>
+
+                        <tr>
+                            <td>Gill Byrd, Dave Waymer</td>
+                            <td>Interceptions (Season)</td>
+                            <td>18 Interceptions</td>
+                            <td>Cpu</td>
+                            <td>n/a</td>
+                        </tr>
+                        <tr>
+                            <td>Craig Heyward</td>
+                            <td>Total Return Touchdowns (Season)</td>
+                            <td>12 touchdowns</td>
+                            <td>Eff</td>
+                            <td>IV</td>
+                        </tr>
+                        <tr>
+                            <td>Craig Heyward</td>
+                            <td>Kick Return Avg (Season)</td>
+                            <td>36.4 yards per return</td>
+                            <td>Eff</td>
+                            <td>IV</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="content-8">
+                    <table class="wall-of-fame">
+                        <caption class="football-title table-caption">Wall of Fame - Team Records</caption>
+                        <tr class="row-0">
+                            <th>Team</th>
+                            <th>Record</th>
+                            <th>Stats</th>
+                            <th>User</th>
+                            <th>Gen</th>
+                        </tr>
+                        <tr>
+                            <td>Philadelphia Eagles</td>
+                            <td>Total Offense (Season)</td>
+                            <td>6484 yards</td>
+                            <td>Eff</td>
+                            <td>IV</td>
+                        </tr>
+                        <tr>
+                            <td>New York Giants</td>
+                            <td>Total Defense (Season)</td>
+                            <td>1465 yards</td>
+                            <td>Eff</td>
+                            <td>n/a</td>
+                        </tr>
+                        <tr>
+                            <td>Chicago Bears</td>
+                            <td>Passing Defense (Season)</td>
+                            <td>447 yards</td>
+                            <td>Att</td>
+                            <td>I</td>
+                        </tr>
+                        <tr>
+                            <td>Kansas City Chiefs</td>
+                            <td>Points Scored (Season)</td>
+                            <td>1002 points</td>
+                            <td>Eff</td>
+                            <td>IV</td>
+                        </tr>
+                        <tr>
+                            <td>Pittsburgh Steelers</td>
+                            <td>Points Against (Season)</td>
+                            <td>39 points</td>
+                            <td>Eff</td>
+                            <td>n/a</td>
+                        </tr>
+                        <tr>
+                            <td>Kansas City Chiefs</td>
+                            <td>Total Offensive Touchdowns (Season)</td>
+                            <td>125 touchdowns</td>
+                            <td>Eff</td>
+                            <td>IV</td>
+                        </tr>
+                        <tr>
+                            <td>San Francisco 49ers</td>
+                            <td>Total Interceptions (Season)</td>
+                            <td>21 interceptions</td>
+                            <td>Cpu</td>
+                            <td>n/a</td>
+                        </tr>
+                        <tr>
+                            <td>Miami Dolphins</td>
+                            <td>Passing Yards (Game)</td>
+                            <td>590 yards</td>
+                            <td>Eff</td>
+                            <td>n/a</td>
+                        </tr>
+                        <tr>
+                            <td>Los Angeles Raiders</td>
+                            <td>Rushing Yards (Game)</td>
+                            <td>527 yards</td>
+                            <td>Cpu</td>
+                            <td>n/a</td>
+                        </tr>
+                        <tr>
+                            <td>Chicago Bears, Philadelphia Eagles</td>
+                            <td>Points Scored (Game)</td>
+                            <td>89 points</td>
+                            <td>Att, Eff</td>
+                            <td>I, III</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
-        </div>
-
-        <div class="content-3" id="latest-updates">
-            <h4 class="football-title football-subtitle">Latest Updates:</h4>
-            <p class="first-letter">This new look records site includes new records like Most Passes W/O an
-                Interception
-                (Season), QB Total
-                Touchdowns (Passing + Rushing) and more.</p>
-        </div>
-
-        <div class="content-4">
-            <p class="football-title football-subtitle">Current Streak (including post-season):</p>
-            <div class="meter">
-                <meter value="197" min="0" max="197">197</meter>&nbsp;197 Wins (Eff's Record)
-                <meter value="80" min="0" max="197">80</meter>&nbsp;80 Wins by Atter
-                <meter value="57" min="0" max="197">57</meter>&nbsp;57 Wins by Effer
-                <meter value="19" min="0" max="197">19</meter>&nbsp;19 Wins by Rewer
-            </div>
-
-        </div>
-
-        <div class="content-5" id="rosters">
-            <p class="football-title football-subtitle">What about rosters?:</p>
-            <p>You may have noticed the present records are with the original 1991 Tecmo Superbowl roster. New to
-                this
-                site is
-                the inclusion of the 1993 roster (from the SNES version). I have finalized the roster to include
-                updated
-                schedule (modified to fit into 17 weeks for NES), accurate kr/pr (excluding defensive backs),
-                playbooks,
-                and simulation ratings. Any records with the '93 roster will count for the NES.</p>
-            <p> A copy of all records will be made for the SNES version. As of now, we have no seasons in the books
-                for
-                SNES.</p>
-        </div>
-
-        <div class="content-6" id="rules">
-            <p class="football-title football-subtitle">Rules of Play:</p>
-            <p class="first-letter">We don't just play the game however we want. There are certain rules we must
-                follow
-                for
-                these records to
-                be considered valid and fair. Anyone who has played TSB enough knows there are ways to cheat the
-                system,
-                so
-                here
-                are our rules:
-            </p>
-            <ul>
-                <li>No lurching, which is where you dive at the QB immediately after the snap. Defensive lineman
-                    used
-                    must
-                    grapple or drop back before pursuing the QB. All other defenders have no limits.</li>
-                <li>No onside kicks unless tied or trailing in the 4th quarter or overtime. Any accidental onside
-                    kicks
-                    must
-                    be punted away.</li>
-                <li>When defending kicking attempts, use of 4th player down (rolb) is prohibited due to ability to
-                    run
-                    straight by the blockers.</li>
-            </ul>
-            <p>
-                We used to not allow WRs to be used in the backfield on traditional running players, but have since
-                changed
-                that
-                rule to allow freedom of position swapping. After all, no WR is going to be Bo Jackson or Christian
-                Okoye.
-            </p>
-            <p>As this is all enforced via honor system. there are a few other considerations: We look down upon
-                using
-                save
-                states to constantly re-try to play games for records. In general, we just play the games and they
-                fall
-                as
-                they
-                may.</p>
-        </div>
-        <div class="content-7">
-            <table class="wall-of-fame">
-                <caption class="football-title table-caption">Wall of Fame - Individual Records</caption>
-                <tr class="row-0">
-                    <th>Player</th>
-                    <th>Record</th>
-                    <th>Stats</th>
-                    <th>User</th>
-                    <th>Gen</th>
-                </tr>
-                <tr>
-                    <td>QB Bills</td>
-                    <td>Passer Rating (Season)</td>
-                    <td>305.9 rating</td>
-                    <td>Eff</td>
-                    <td>III</td>
-                </tr>
-                <tr>
-                    <td>Warren Moon</td>
-                    <td>Passing Yards (Season)</td>
-                    <td>6200 yards</td>
-                    <td>Rew</td>
-                    <td>I</td>
-                </tr>
-                <tr>
-                    <td>QB Eagles</td>
-                    <td>Total Touchdowns (Season)</td>
-                    <td>109 touchdowns</td>
-                    <td>Eff</td>
-                    <td>IV</td>
-                </tr>
-
-                <tr>
-                    <td>Bo Jackson</td>
-                    <td>Rushing Yards (Game)</td>
-                    <td>474 yards</td>
-                    <td>Eff</td>
-                    <td>n/a</td>
-                </tr>
-                <tr>
-                    <td>Neal Anderson</td>
-                    <td>Scrimmage Touchdowns (Season)</td>
-                    <td>95 touchdowns</td>
-                    <td>Att</td>
-                    <td>I</td>
-                </tr>
-                <tr>
-                    <td>Drew Hill</td>
-                    <td>Receiving Yards (Season)</td>
-                    <td>3448 yards</td>
-                    <td>Eff</td>
-                    <td>IV</td>
-                </tr>
-                <tr>
-                    <td>Mike Singletary</td>
-                    <td>Sacks (Season)</td>
-                    <td>98 sacks</td>
-                    <td>Att</td>
-                    <td>I</td>
-                </tr>
-
-                <tr>
-                    <td>Gill Byrd, Dave Waymer</td>
-                    <td>Interceptions (Season)</td>
-                    <td>18 Interceptions</td>
-                    <td>Cpu</td>
-                    <td>n/a</td>
-                </tr>
-                <tr>
-                    <td>Craig Heyward</td>
-                    <td>Total Return Touchdowns (Season)</td>
-                    <td>12 touchdowns</td>
-                    <td>Eff</td>
-                    <td>IV</td>
-                </tr>
-                <tr>
-                    <td>Craig Heyward</td>
-                    <td>Kick Return Avg (Season)</td>
-                    <td>36.4 yards per return</td>
-                    <td>Eff</td>
-                    <td>IV</td>
-                </tr>
-            </table>
-        </div>
-        <div class="content-8">
-            <table class="wall-of-fame">
-                <caption class="football-title table-caption">Wall of Fame - Team Records</caption>
-                <tr class="row-0">
-                    <th>Team</th>
-                    <th>Record</th>
-                    <th>Stats</th>
-                    <th>User</th>
-                    <th>Gen</th>
-                </tr>
-                <tr>
-                    <td>Philadelphia Eagles</td>
-                    <td>Total Offense (Season)</td>
-                    <td>6484 yards</td>
-                    <td>Eff</td>
-                    <td>IV</td>
-                </tr>
-                <tr>
-                    <td>New York Giants</td>
-                    <td>Total Defense (Season)</td>
-                    <td>1465 yards</td>
-                    <td>Eff</td>
-                    <td>n/a</td>
-                </tr>
-                <tr>
-                    <td>Chicago Bears</td>
-                    <td>Passing Defense (Season)</td>
-                    <td>447 yards</td>
-                    <td>Att</td>
-                    <td>I</td>
-                </tr>
-                <tr>
-                    <td>Kansas City Chiefs</td>
-                    <td>Points Scored (Season)</td>
-                    <td>1002 points</td>
-                    <td>Eff</td>
-                    <td>IV</td>
-                </tr>
-                <tr>
-                    <td>Pittsburgh Steelers</td>
-                    <td>Points Against (Season)</td>
-                    <td>39 points</td>
-                    <td>Eff</td>
-                    <td>n/a</td>
-                </tr>
-                <tr>
-                    <td>Kansas City Chiefs</td>
-                    <td>Total Offensive Touchdowns (Season)</td>
-                    <td>125 touchdowns</td>
-                    <td>Eff</td>
-                    <td>IV</td>
-                </tr>
-                <tr>
-                    <td>San Francisco 49ers</td>
-                    <td>Total Interceptions (Season)</td>
-                    <td>21 interceptions</td>
-                    <td>Cpu</td>
-                    <td>n/a</td>
-                </tr>
-                <tr>
-                    <td>Miami Dolphins</td>
-                    <td>Passing Yards (Game)</td>
-                    <td>590 yards</td>
-                    <td>Eff</td>
-                    <td>n/a</td>
-                </tr>
-                <tr>
-                    <td>Los Angeles Raiders</td>
-                    <td>Rushing Yards (Game)</td>
-                    <td>527 yards</td>
-                    <td>Cpu</td>
-                    <td>n/a</td>
-                </tr>
-                <tr>
-                    <td>Chicago Bears, Philadelphia Eagles</td>
-                    <td>Points Scored (Game)</td>
-                    <td>89 points</td>
-                    <td>Att, Eff</td>
-                    <td>I, III</td>
-                </tr>
-            </table>
-        </div>
-    </div>
-    <footer class="framed-bg">
-        <p>&copy;Copyright Jeffrey Hill, 2024.</p>
-        E-mail: <a href="mailto:phoenixshredds@yahoo.com">phoenixshredds@yahoo.com</a>
-    </footer>
-    <script src="script.js"></script>
+        </main>
+        <footer class="framed-bg">
+            <p>&copy;Copyright Jeffrey Hill, 2024.</p>
+            E-mail: <a href="mailto:phoenixshredds@yahoo.com">phoenixshredds@yahoo.com</a>
+        </footer>
+        <script src="script.js"></script>
 </body>
 
 </html>

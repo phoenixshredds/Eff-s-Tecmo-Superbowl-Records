@@ -1,18 +1,260 @@
 {
+  "standings": [
+    {
+      "id": "eff-latest-season",
+      "text": "Eff's Phoenix Cardinals: 4-0"
+    },
+    {
+      "id": "eff-latest-season-93",
+      "text": "Eff's '93 Atlanta Falcons: 0-0"
+    },
+    {
+      "id": "eff-previous-season",
+      "text": "Eff's San Francisco 49ers: 16-0, Superbowl Champions"
+    },
+    {
+      "id": "eff-previous-season-93",
+      "text": "Eff's '93 Minnesota Vikings: 16-0, Superbowl Champions"
+    }
+  ],
   "passing": {
     "title": "Individual Passing Records",
     "sections": [
       {
-        "title": "Highest QB Rating",
+        "title": "QB Rating - Season",
         "entries": [
-          { "label": "Season", "stat": "305.9 rating", "player": "QB Bills", "tag": "Eff", "image": "QB-Bills.png", "teamClass": "bills" }
+          {
+            "label": "Best",
+            "stat": "305.9 rating",
+            "player": "QB Bills",
+            "tag": "Eff",
+            "image": "QB-Bills.png",
+            "teamClass": "bills"
+          },
+          {
+            "label": "Worst",
+            "stat": "218.7 rating",
+            "player": "Boomer Esaison",
+            "tag": "Eff",
+            "image": "Boomer-Esaison.png",
+            "teamClass": "bengals"
+          }
+        ]
+      },
+      {
+        "title": "Completion Percentage - Season",
+        "entries": [
+          {
+            "label": "Highest",
+            "stat": "89.0%",
+            "player": "Joe Montana",
+            "tag": "Eff",
+            "image": "Joe-Montana.png",
+            "teamClass": "niners"
+          },
+          {
+            "label": "Lowest",
+            "stat": "67.1%",
+            "player": "Joe Montana",
+            "tag": "Eff",
+            "image": "Joe-Montana.png",
+            "teamClass": "niners"
+          }
+        ]
+      },
+      {
+        "title": "Most Passing Attempts",
+        "entries": [
+          {
+            "label": "Season",
+            "stat": "325 completions",
+            "player": "Warren Moon",
+            "tag": "Rew",
+            "image": "Warren-Moon.png",
+            "teamClass": "oilers"
+          }
+        ]
+      },
+      {
+        "title": "Most Passing Completions",
+        "entries": [
+          {
+            "label": "Season",
+            "stat": "216 completions",
+            "player": "Warren Moon",
+            "tag": "Eff",
+            "image": "Warren-Moon.png",
+            "teamClass": "oilers"
+          }
         ]
       },
       {
         "title": "Most Passing Yards",
         "entries": [
-          { "label": "Game", "stat": "590 yards", "player": "Dan Marino", "tag": "Eff", "image": "Dan-Marino.png", "teamClass": "dolphins" },
-          { "label": "Season", "stat": "6200 yards", "player": "Warren Moon", "tag": "Rew", "image": "Warren-Moon.png", "teamClass": "oilers" }
+          {
+            "label": "Game",
+            "stat": "590 yards",
+            "player": "Dan Marino",
+            "tag": "Eff",
+            "image": "Dan-Marino.png",
+            "teamClass": "dolphins"
+          },
+          {
+            "label": "Season",
+            "stat": "6200 yards",
+            "player": "Warren Moon",
+            "tag": "Rew",
+            "image": "Warren-Moon.png",
+            "teamClass": "oilers"
+          }
+        ]
+      },
+      {
+        "title": "Total Offensive Yards",
+        "entries": [
+          {
+            "label": "Game",
+            "stat": "590 yards",
+            "player": "Dan Marino",
+            "tag": "Eff",
+            "image": "Dan-Marino.png",
+            "teamClass": "dolphins"
+          },
+          {
+            "label": "Season",
+            "stat": "6484 yards",
+            "player": "QB Eagles",
+            "tag": "Eff",
+            "image": "QB-Eagles.png",
+            "teamClass": "eagles"
+          }
+        ]
+      },
+      {
+        "title": "Yards Per Attempt",
+        "entries": [
+          {
+            "label": "Best",
+            "stat": "28.8 ypa",
+            "player": "QB Bills",
+            "tag": "Eff",
+            "image": "QB-Bills.png",
+            "teamClass": "bills"
+          },
+          {
+            "label": "Worst",
+            "stat": "18.6 ypa",
+            "player": "Boomer Esaison",
+            "tag": "Eff",
+            "image": "Boomer-Esaison.png",
+            "teamClass": "bengals"
+          }
+        ]
+      },
+      {
+        "title": "Most Touchdown Passes",
+        "entries": [
+          {
+            "label": "Season",
+            "stat": "103 touchdowns",
+            "player": "Warren Moon",
+            "tag": "Rew",
+            "image": "Warren-Moon.png",
+            "teamClass": "oilers"
+          }
+        ]
+      },
+      {
+        "title": "Best Interception Percentage",
+        "entries": [
+          {
+            "label": "Season",
+            "stat": "0.0%",
+            "player": "Steve DeBerg",
+            "tag": "Att",
+            "image": "Steve-DeBerg.png",
+            "teamClass": "chiefs"
+          },
+          {
+            "label": "Season",
+            "stat": "0.0%",
+            "player": "Jim Harbaugh",
+            "tag": "Att",
+            "image": "Jim-Harbaugh.png",
+            "teamClass": "bears"
+          },
+          {
+            "label": "Season",
+            "stat": "0.0%",
+            "player": "Joe Montana",
+            "tag": "Eff",
+            "image": "Joe-Montana.png",
+            "teamClass": "niners"
+          },
+          {
+            "label": "Season",
+            "stat": "0.0%",
+            "player": "QB Bills",
+            "tag": "Eff",
+            "image": "QB-Bills.png",
+            "teamClass": "bills"
+          }
+        ]
+      },
+      {
+        "title": "Worst Interception Percentage",
+        "entries": [
+          {
+            "label": "Season",
+            "stat": "3.94%",
+            "player": "Boomer Esaison",
+            "tag": "Eff",
+            "image": "Boomer-Esaison.png",
+            "teamClass": "bengals"
+          }
+        ]
+      },
+      {
+        "title": "Most Passing Attempts Without Interception",
+        "entries": [
+          {
+            "label": "Season",
+            "stat": "0 attempts",
+            "player": "none",
+            "tag": "n/a",
+            "image": "nfl.png",
+            "teamClass": "nfl"
+          }
+        ]
+      },
+      {
+        "title": "Interceptions Thrown",
+        "entries": [
+          {
+            "label": "Game",
+            "stat": "3 interceptions",
+            "player": "Dave Krieg",
+            "tag": "Eff",
+            "image": "Dave-Krieg.png",
+            "teamClass": "seahawks"
+          },
+          {
+            "label": "Season",
+            "stat": "8 interceptions",
+            "player": "Jim Everett",
+            "tag": "Eff",
+            "image": "Jim-Everett.png",
+            "teamClass": "rams"
+          },
+          {
+            "label": "Season",
+            "stat": "8 interceptions",
+            "player": "Boomer Esaison",
+            "tag": "Eff",
+            "image": "Boomer-Esaison.png",
+            "teamClass": "bengals"
+          }
+
         ]
       }
     ]

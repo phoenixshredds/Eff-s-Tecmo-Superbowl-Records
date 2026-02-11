@@ -169,16 +169,16 @@ footer a:hover,
 /* Key header text settings */
 .key-header {
   font-weight: bold;
-  font-size: 1.75rem;
-  padding: 1rem;
+  font-size: 1.25rem;
+  padding: 0.8rem;
 }
 
 /* Key content text settings */
 .key {
   font-weight: normal;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: left;
-  padding: 1rem;
+  padding: .8rem;
 }
 
 /* Creates a semi-transparent background with a framed border */
@@ -189,7 +189,7 @@ footer a:hover,
   border-radius: 0.75em;
   border: 0.5rem ridge var(--transparent-brown);
   width: 36rem;
-  margin: 2rem auto;
+  margin: 1rem auto;
   height: fit-content;
 }
 
@@ -312,6 +312,8 @@ footer a:hover,
   font-size: 0.7em;
   padding: 0.2em;
 }
+
+
 
 /* Calculator container styles */
 .calculator {
@@ -549,7 +551,7 @@ footer {
 
   .football-title {
     transform: scale(0.7, 0.7);
-    font-size-adjust: inherit;
+    font-size: clamp(1.25em, 7vw, 2em);
   }
 
   .framed-bg {
