@@ -80,24 +80,37 @@ function renderGrid(sections, title) {
     mainContainer.appendChild(subTitleDiv);
 
     // IV. Build the records content
+    // IV. Build the records content
+    // 1. Create the grid wrapper first
+    const gridWrapper = document.createElement('div');
+    gridWrapper.className = "container";
+
     sections.forEach((section, index) => {
         const sectionElement = document.createElement('section');
         sectionElement.className = `content-${index + 1}`;
 
-        let html = `<p class="record-header">${section.title}:</p>`;
+        // Note: I added the opening <ul> tag here to keep your list valid
+        let html = `<p class="record-header">${section.title}:</p><ul>`;
         section.entries.forEach(entry => {
             html += `
-                <li class="hover-img ${entry.teamClass}">
-                    <a href="#">
-                        ${entry.label}: ${entry.stat}, ${entry.player} - ${entry.tag}
-                        <img src="${entry.image}" alt="${entry.player}">
-                    </a>
-                </li>`;
+            <li class="hover-img ${entry.teamClass}">
+                <a href="#">
+                    ${entry.label}: ${entry.stat}, ${entry.player} - ${entry.tag}
+                    <img src="${entry.image}" alt="${entry.player}">
+                </a>
+            </li>`;
         });
+        html += `</ul>`; // Close the list
         sectionElement.innerHTML = html;
-        mainContainer.appendChild(sectionElement);
+
+        // 2. Append the section to the GRID WRAPPER, not the main container
+        gridWrapper.appendChild(sectionElement);
     });
+
+    // 3. Finally, add the entire grid wrapper to the page
+    mainContainer.appendChild(gridWrapper);
 }
+
 // 4. STANDINGS
 function updateStandings(standingsData) {
     if (!standingsData) return;

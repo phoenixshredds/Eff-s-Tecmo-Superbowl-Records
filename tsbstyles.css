@@ -193,17 +193,9 @@ footer a:hover,
   height: fit-content;
 }
 
-/* Container Grid Layout */
+/* Container Grid Layout */ 
 .container {
-  display: grid;
-  grid-template-columns: .5fr 1fr 1fr 1fr;
-  grid-template-areas:
-    "sidenav content-1 content-2 content-3"
-    "sidenav content-4 content-5 content-6"
-    "sidenav content-7 content-8 content-9"
-    "sidenav content-10 content-11 content-12"
-    "sidenav content-13 content-14 content-15"
-    "sidenav content-16 content-17 content-18";
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .content-1 {
@@ -312,8 +304,6 @@ footer a:hover,
   font-size: 0.7em;
   padding: 0.2em;
 }
-
-
 
 /* Calculator container styles */
 .calculator {

@@ -110,6 +110,27 @@
         ]
       },
       {
+        "title": "Passing Yards Per Attempt",
+        "entries": [
+          {
+            "label": "Best",
+            "stat": "28.8 ypa",
+            "player": "QB Bills",
+            "tag": "Eff",
+            "image": "QB-Bills.png",
+            "teamClass": "bills"
+          },
+          {
+            "label": "Worst",
+            "stat": "18.6 ypa",
+            "player": "Boomer Esaison",
+            "tag": "Eff",
+            "image": "Boomer-Esaison.png",
+            "teamClass": "bengals"
+          }
+        ]
+      },
+      {
         "title": "Total Offensive Yards",
         "entries": [
           {
@@ -127,27 +148,6 @@
             "tag": "Eff",
             "image": "QB-Eagles.png",
             "teamClass": "eagles"
-          }
-        ]
-      },
-      {
-        "title": "Yards Per Attempt",
-        "entries": [
-          {
-            "label": "Best",
-            "stat": "28.8 ypa",
-            "player": "QB Bills",
-            "tag": "Eff",
-            "image": "QB-Bills.png",
-            "teamClass": "bills"
-          },
-          {
-            "label": "Worst",
-            "stat": "18.6 ypa",
-            "player": "Boomer Esaison",
-            "tag": "Eff",
-            "image": "Boomer-Esaison.png",
-            "teamClass": "bengals"
           }
         ]
       },
